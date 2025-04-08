@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCoding with Claude Code - In-file Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>VibeCoding with Claude Code</h1>
+        <p>Best Practices for AI-Assisted Development</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="home">Home</a>
+        <div>
+            <a href="page10.html">Previous</a>
+            <a href="page2.html">Next</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>1. In-file Documentation with Claude.md</h1>
+        
+        <div class="diagram">
+            <svg width="600" height="400" viewBox="0 0 600 400">
+                <!-- Document outline with Claude.md structure -->
+                <rect x="100" y="50" width="400" height="300" fill="#f0f0f0" stroke="#4a2a82" stroke-width="3" rx="10"/>
+                <text x="300" y="80" font-family="Arial" font-size="20" text-anchor="middle" fill="#4a2a82">Claude.md File</text>
+                
+                <!-- Documentation sections -->
+                <rect x="130" y="100" width="340" height="40" fill="white" stroke="#4a2a82" stroke-width="2" rx="5"/>
+                <text x="150" y="125" font-family="Arial" font-size="14" fill="#4a2a82">Project Overview & Current Status</text>
+                
+                <rect x="130" y="160" width="340" height="40" fill="white" stroke="#4a2a82" stroke-width="2" rx="5"/>
+                <text x="150" y="185" font-family="Arial" font-size="14" fill="#4a2a82">Technology Stack & Dependencies</text>
+                
+                <rect x="130" y="220" width="340" height="40" fill="white" stroke="#4a2a82" stroke-width="2" rx="5"/>
+                <text x="150" y="245" font-family="Arial" font-size="14" fill="#4a2a82">Current Implementation Status</text>
+                
+                <rect x="130" y="280" width="340" height="40" fill="white" stroke="#4a2a82" stroke-width="2" rx="5"/>
+                <text x="150" y="305" font-family="Arial" font-size="14" fill="#4a2a82">Next Steps & Planned Features</text>
+                
+                <!-- Context window indicator -->
+                <rect x="50" y="370" width="500" height="20" fill="#e0e0e0" stroke="#888" stroke-width="1"/>
+                <rect x="50" y="370" width="200" height="20" fill="#4a2a82" opacity="0.3"/>
+                <text x="300" y="385" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Context Window (200,000 tokens)</text>
+            </svg>
+        </div>
+        
+        <p>The first and most crucial practice in VibeCoding with Claude Code is maintaining comprehensive in-file documentation, especially through Claude.md files. These files serve as the central reference point for Claude when assisting with your development tasks.</p>
+        
+        <h2>Why Claude.md Files Matter</h2>
+        
+        <p>Claude.md files are critical because they're read every time Claude needs to recover context. When Claude's memory is refreshed or when the token limit is reached, the Claude.md file provides essential information about your project's current state.</p>
+        
+        <div class="example-wrapper">
+            <div class="example-title">Context Loss Scenario</div>
+            <div class="terminal-demo">
+                <p><span class="terminal-prompt">></span> I need to continue working on the user authentication system we were building yesterday.</p>
+                <p><span style="color: #9a6aff;">Claude Code:</span> I don't have context of our previous session in my current memory. Let me check your Claude.md file...</p>
+                <p><span style="color: #9a6aff;">Claude Code:</span> I see we were implementing JWT authentication with refresh tokens. You completed the token generation logic but were having issues with token validation. Let's continue from there.</p>
+            </div>
+        </div>
+        
+        <div class="tip">
+            <div class="tip-title">Pro Tip</div>
+            <p>Think of Claude.md as your "front-end companion to source control." While source control tracks code changes historically, Claude.md captures the current state, rationale, and direction of your project in an AI-consumable format.</p>
+        </div>
+        
+        <h2>Essential Components of a Claude.md File</h2>
+        
+        <p>An effective Claude.md file should include:</p>
+        
+        <ul>
+            <li><strong>Project Overview:</strong> A brief description of what the project is and its goals</li>
+            <li><strong>Current Status:</strong> Where you are in the development process</li>
+            <li><strong>Technology Stack:</strong> Languages, frameworks, and libraries being used, including version information</li>
+            <li><strong>Implementation Details:</strong> Current architecture and design decisions</li>
+            <li><strong>Recent Changes:</strong> What you've been working on recently</li>
+            <li><strong>Next Steps:</strong> What you plan to implement or change next</li>
+            <li><strong>Dependencies:</strong> External services, APIs, or libraries that the project relies on</li>
+            <li><strong>Known Issues:</strong> Current bugs or limitations you're aware of</li>
+        </ul>
+        
+        <h2>Claude.md File Example</h2>
+        
+        <div class="code-example">
+            <pre><code># Project: E-commerce Platform API
+## Current Status: Implementing payment processing module
+
+### Technology Stack
+- Backend: Node.js with Express
+- Database: MongoDB
+- Authentication: JWT
+- Payment Processing: Stripe API
+
+### Recent Implementation
+- User authentication completed
+- Product catalog API endpoints established
+- Shopping cart functionality implemented
+
+### Current Task
+Working on integrating Stripe payment processing:
+- Creating payment intent endpoint
+- Handling webhook notifications
+- Implementing payment confirmation flow
+
+### Next Steps
+- Order history functionality
+- Email notification system
+- Admin dashboard</code></pre>
+        </div>
+        
+        <h2>Best Practices</h2>
+        
+        <ul>
+            <li><strong>Keep it Updated:</strong> Update your Claude.md file at the beginning of each development session</li>
+            <li><strong>Be Specific:</strong> Include specific details about where you are in the project</li>
+            <li><strong>Prioritize Relevance:</strong> Focus on information that's most relevant to your current tasks</li>
+            <li><strong>Use Markdown:</strong> Structure your documentation with clear headings and formatting</li>
+            <li><strong>Stay Concise:</strong> Remember the token limit - be informative but efficient</li>
+            <li><strong>Version Control Integration:</strong> Store Claude.md in your repository and reference commit IDs for key changes</li>
+            <li><strong>Update Frequency:</strong> Update at least daily for active projects, or after significant milestones</li>
+        </ul>
+        
+        <div class="tip">
+            <div class="tip-title">Remember</div>
+            <p>When Claude "runs out of memory" or the context is truncated, the Claude.md file gets read every time. Keep it organized and current to ensure Claude always knows where to begin.</p>
+        </div>
+        
+        <h2>Version Control Integration</h2>
+        
+        <p>Effectively integrating Claude.md with your version control workflow improves both documentation quality and development efficiency:</p>
+        
+        <div class="comparison-container">
+            <div class="comparison-column">
+                <div class="comparison-header">Basic Approach</div>
+                <ul>
+                    <li>Store Claude.md in your repository root</li>
+                    <li>Commit updates alongside code changes</li>
+                    <li>Reference specific files in documentation</li>
+                </ul>
+            </div>
+            
+            <div class="comparison-column">
+                <div class="comparison-header">Advanced Approach</div>
+                <ul>
+                    <li>Add Claude.md updates to your PR checklist</li>
+                    <li>Reference commit hashes for key changes</li>
+                    <li>Use Git hooks to remind you to update</li>
+                    <li>Create branch-specific Claude.md for complex features</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="code-example">
+            <pre><code># Recent Changes
+## Authentication System (commit: 7e3a91f)
+- Implemented JWT token generation
+- Added refresh token functionality
+- Fixed validation issues in middleware
+
+## Current Branch: feature/payment-processing
+Working on integrating Stripe payment gateway</code></pre>
+        </div>
+    </div>
+
+    <div class="navigation-buttons">
+        <a href="index.html" class="nav-button">Back to Index</a>
+        <a href="page2.html" class="nav-button">Next: Platform Documentation Folder</a>
+    </div>
+
+    <footer>
+        <p>© 2025 Joseph Enochs @ EVT. All rights reserved.</p>
+    </footer>
+</body>
+</html>

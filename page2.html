@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCoding with Claude Code - Platform Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>VibeCoding with Claude Code</h1>
+        <p>Best Practices for AI-Assisted Development</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="home">Home</a>
+        <div>
+            <a href="page1.html">Previous</a>
+            <a href="page3.html">Next</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>2. Platform Documentation Folder</h1>
+        
+        <div class="diagram">
+            <svg width="600" height="400" viewBox="0 0 600 400">
+                <!-- Main folder structure -->
+                <rect x="50" y="50" width="500" height="300" fill="#f8f9fa" stroke="#4a2a82" stroke-width="3" rx="10"/>
+                <text x="300" y="80" font-family="Arial" font-size="20" text-anchor="middle" fill="#4a2a82">Platform Documentation</text>
+                
+                <!-- Sub-folders -->
+                <rect x="80" y="100" width="120" height="70" fill="white" stroke="#4a2a82" stroke-width="2" rx="5"/>
+                <text x="140" y="140" font-family="Arial" font-size="14" text-anchor="middle" fill="#4a2a82">Framework Docs</text>
+                
+                <rect x="240" y="100" width="120" height="70" fill="white" stroke="#4a2a82" stroke-width="2" rx="5"/>
+                <text x="300" y="140" font-family="Arial" font-size="14" text-anchor="middle" fill="#4a2a82">Library APIs</text>
+                
+                <rect x="400" y="100" width="120" height="70" fill="white" stroke="#4a2a82" stroke-width="2" rx="5"/>
+                <text x="460" y="140" font-family="Arial" font-size="14" text-anchor="middle" fill="#4a2a82">Version Info</text>
+                
+                <!-- Doc files -->
+                <rect x="80" y="200" width="100" height="30" fill="white" stroke="#4a2a82" stroke-width="1" rx="3"/>
+                <text x="130" y="220" font-family="Arial" font-size="12" text-anchor="middle" fill="#4a2a82">react.md</text>
+                
+                <rect x="80" y="240" width="100" height="30" fill="white" stroke="#4a2a82" stroke-width="1" rx="3"/>
+                <text x="130" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#4a2a82">next.js.md</text>
+                
+                <rect x="250" y="200" width="100" height="30" fill="white" stroke="#4a2a82" stroke-width="1" rx="3"/>
+                <text x="300" y="220" font-family="Arial" font-size="12" text-anchor="middle" fill="#4a2a82">stripe-api.md</text>
+                
+                <rect x="250" y="240" width="100" height="30" fill="white" stroke="#4a2a82" stroke-width="1" rx="3"/>
+                <text x="300" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#4a2a82">aws-sdk.md</text>
+                
+                <rect x="410" y="200" width="100" height="30" fill="white" stroke="#4a2a82" stroke-width="1" rx="3"/>
+                <text x="460" y="220" font-family="Arial" font-size="12" text-anchor="middle" fill="#4a2a82">compatibility.md</text>
+                
+                <rect x="410" y="240" width="100" height="30" fill="white" stroke="#4a2a82" stroke-width="1" rx="3"/>
+                <text x="460" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#4a2a82">updates.md</text>
+                
+                <!-- Connecting lines -->
+                <path d="M140,170 L140,200" stroke="#4a2a82" stroke-width="1" stroke-dasharray="5,5"/>
+                <path d="M300,170 L300,200" stroke="#4a2a82" stroke-width="1" stroke-dasharray="5,5"/>
+                <path d="M460,170 L460,200" stroke="#4a2a82" stroke-width="1" stroke-dasharray="5,5"/>
+                
+                <!-- AI connection -->
+                <circle cx="300" cy="370" r="20" fill="#4a2a82" opacity="0.7"/>
+                <text x="300" y="375" font-family="Arial" font-size="12" text-anchor="middle" fill="white">AI</text>
+                <path d="M300,350 L300,300" stroke="#4a2a82" stroke-width="2" stroke-dasharray="5,5"/>
+            </svg>
+        </div>
+        
+        <p>Creating a dedicated Platform Documentation folder is essential for providing Claude Code with up-to-date information about the tools and technologies you're using in your project. This practice addresses one of the key limitations of AI models: their knowledge cutoff.</p>
+        
+        <h2>Why Platform Documentation Matters</h2>
+        
+        <p>Most AI coding models have knowledge that may be dated compared to the latest versions of frameworks, libraries, and technologies. By maintaining dedicated platform documentation, you ensure that Claude has access to the most current information, avoiding outdated implementation suggestions.</p>
+        
+        <div class="tip">
+            <div class="tip-title">Pro Tip</div>
+            <p>Platform documentation isn't just for the AI—it's for your application. The Claude.md tells Claude what you're going to do, while Platform Docs tells it what tools you're going to use.</p>
+        </div>
+        
+        <h2>What to Include in Your Platform Documentation</h2>
+        
+        <ul>
+            <li><strong>Framework Documentation:</strong> Latest APIs, features, and best practices for your frameworks</li>
+            <li><strong>Library References:</strong> Documentation for the specific libraries your project uses</li>
+            <li><strong>Code Examples:</strong> Sample implementations using the latest versions of your tools</li>
+            <li><strong>Compatibility Information:</strong> Compatibility between different components of your stack</li>
+            <li><strong>Version-Specific Details:</strong> Information about the specific versions you're using</li>
+            <li><strong>Integration Patterns:</strong> How different parts of your technology stack should interact</li>
+        </ul>
+        
+        <h2>Recommended Folder Structure</h2>
+        
+        <div class="code-example">
+            <pre><code>platform_docs/
+├── frameworks/
+│   ├── react.md
+│   ├── nextjs.md
+│   └── express.md
+├── libraries/
+│   ├── stripe-api.md
+│   ├── aws-sdk.md
+│   └── mongodb.md
+├── tools/
+│   ├── webpack.md
+│   └── docker.md
+├── integration/
+│   ├── auth-flow.md
+│   └── payment-flow.md
+└── compatibility.md</code></pre>
+        </div>
+        
+        <h2>Documentation Example</h2>
+        
+        <p>Here's an example of what a library documentation file might contain:</p>
+        
+        <div class="code-example">
+            <pre><code># Stripe API Documentation (v2023-10-16)
+
+## Key Features
+- Payment Intents API for direct card processing
+- Customer Portal for subscription management
+- Strong Customer Authentication (SCA) compliance
+- Webhook event handling
+
+## Basic Implementation
+
+```javascript
+// Creating a payment intent
+const paymentIntent = await stripe.paymentIntents.create({
+  amount: 1000, // in smallest currency unit (e.g., cents)
+  currency: 'usd',
+  payment_method_types: ['card'],
+  metadata: { orderId: '12345' }
+});
+
+// Handling webhook events
+app.post('/webhook', async (req, res) => {
+  const sig = req.headers['stripe-signature'];
+  const event = stripe.webhooks.constructEvent(
+    req.body, 
+    sig, 
+    process.env.STRIPE_WEBHOOK_SECRET
+  );
+  
+  if (event.type === 'payment_intent.succeeded') {
+    const paymentIntent = event.data.object;
+    // Handle successful payment
+  }
+});
+```
+
+## Important Notes
+- Always use asynchronous code with await/then
+- Test webhooks locally using the Stripe CLI
+- Use idempotency keys for retries
+- Store customer IDs in your database
+
+## Resources
+- [Official Documentation](https://stripe.com/docs/api)
+- [Testing Guide](https://stripe.com/docs/testing)
+- [Webhook Guide](https://stripe.com/docs/webhooks)</code></pre>
+        </div>
+        
+        <h2>Best Practices</h2>
+        
+        <ul>
+            <li><strong>Use Markdown Format:</strong> Simple, readable, and well-structured documentation</li>
+            <li><strong>Keep it Current:</strong> Update your documentation when you update your dependencies</li>
+            <li><strong>Include Code Examples:</strong> Practical examples help Claude understand implementation patterns</li>
+            <li><strong>Focus on What's Different:</strong> Highlight changes from previous versions or common patterns</li>
+            <li><strong>Reference External Resources:</strong> Link to official documentation for more details</li>
+        </ul>
+        
+        <div class="tip">
+            <div class="tip-title">Remember</div>
+            <p>This approach isn't just for Claude Code. It's a good development practice that helps maintain project knowledge and onboard new team members.</p>
+        </div>
+    </div>
+
+    <div class="navigation-buttons">
+        <a href="page1.html" class="nav-button">Previous: In-file Documentation</a>
+        <a href="page3.html" class="nav-button">Next: Managing Context Window</a>
+    </div>
+
+    <footer>
+        <p>© 2025 Joseph Enochs @ EVT. All rights reserved.</p>
+    </footer>
+</body>
+</html>
