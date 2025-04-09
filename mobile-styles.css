@@ -1107,6 +1107,11 @@ a, button {
         border-color: #333;
     }
     
+    /* Improved card text contrast for dark mode */
+    .card-description {
+        color: #d0d0d0;
+    }
+    
     .tip {
         background-color: rgba(74, 42, 130, 0.1);
     }
