@@ -12,11 +12,11 @@
   <rect x="0" y="0" width="1200" height="300" fill="url(#bg-gradient)" rx="15" ry="15"/>
   
   <!-- Main title -->
-  <text x="600" y="120" font-family="Arial, sans-serif" font-size="60" font-weight="bold" text-anchor="middle" fill="white">VibeCoding</text>
-  <text x="600" y="190" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="white">with Claude Code</text>
+  <text x="600" y="170" font-family="Arial, sans-serif" font-size="60" font-weight="bold" text-anchor="middle" fill="white">VibeCoding</text>
+  <text x="600" y="220" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" fill="white">with Claude Code</text>
   
   <!-- Tagline -->
-  <text x="600" y="240" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="white" opacity="0.8">10 Essential Best Practices for AI-Assisted Development</text>
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="white" opacity="0.8">Best Practices for AI-Assisted Development</text>
   
   <!-- Decorative elements -->
   <circle cx="250" cy="100" r="50" fill="white" opacity="0.1"/>
