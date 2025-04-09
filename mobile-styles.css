@@ -1091,7 +1091,7 @@ a, button {
     }
     
     h1, h2, h3, h4, h5, h6 {
-        color: #9a6aff;
+        color: #b48cff;
     }
     
     header h1 {
@@ -1112,8 +1112,34 @@ a, button {
         color: #d0d0d0;
     }
     
+    /* Enhanced purple elements for better dark mode contrast */
+    .card-title, .folder-name, .feature-list li:before,
+    .tip-title, .markdown-title, .comparison-title, 
+    .comparison-header, .feature-title, .limitation-title, 
+    .integration-card-title, .step-title, .repository-title, 
+    .list-title, .technique-title, .example-title, 
+    .device-title, .strategy-title {
+        color: #b48cff;
+    }
+    
+    /* Improved button and link colors in dark mode */
+    .card-link, .nav-button {
+        background-color: #6e48b1;
+    }
+    
+    .card-link:hover, .card-link:active,
+    .nav-button:hover, .nav-button:active {
+        background-color: #8358d2;
+    }
+    
+    /* Purple accent elements */
+    .step-number, .limitation-icon, .strategy-icon, .progress-bar {
+        background-color: #6e48b1;
+    }
+    
     .tip {
-        background-color: rgba(74, 42, 130, 0.1);
+        background-color: rgba(110, 72, 177, 0.15);
+        border-left-color: #b48cff;
     }
     
     code, pre {
@@ -1132,7 +1158,7 @@ a, button {
     }
     
     nav a {
-        color: #9a6aff;
+        color: #b48cff;
     }
     
     nav a:hover, nav a:active {
@@ -1145,18 +1171,10 @@ a, button {
     
     th {
         background-color: #333;
-        color: #9a6aff;
+        color: #b48cff;
     }
     
     tr:hover {
         background-color: #2d2d2d;
-    }
-    
-    .comparison-title, .markdown-title, .comparison-header,
-    .feature-title, .limitation-title, .integration-card-title,
-    .step-title, .repository-title, .list-title, .technique-title,
-    .example-title, .device-title, .strategy-title {
-        color: #9a6aff;
-        border-color: #444;
     }
 }
