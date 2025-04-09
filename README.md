@@ -4,13 +4,13 @@
 
 ## 📚 About This Project
 
-VibeCoding with Claude Code is a comprehensive guide for developers looking to enhance their workflow with Claude Code. It provides 10 essential best practices for AI-assisted development based on practical experience and real-world scenarios.
+VibeCoding with Claude Code is a comprehensive guide for developers looking to enhance their workflow with Claude Code. It provides essential best practices for AI-assisted development based on practical experience and real-world scenarios.
 
 **[View the live site](https://jenochs.github.io/vibecoding/)**
 
 ## 🌟 Features
 
-- **10 Detailed Best Practices** - Comprehensive guides on everything from context management to portable development
+- **Detailed Best Practices** - Comprehensive guides on everything from context management to portable development
 - **Mobile-Optimized Design** - Responsive layout that works beautifully on all devices
 - **Interactive Examples** - Clear, practical code samples and illustrations
 - **Dark Mode Support** - Comfortable reading experience in any lighting condition
@@ -29,6 +29,7 @@ The guide covers these essential topics:
 8. **Central Documentation Repository** - Building a single source of truth
 9. **List Formatting Techniques** - Structuring information for terminal environments
 10. **Portable Development** - Coding anywhere on any device
+11. **And Many More in the works!**
 
 ## 💻 Technical Implementation
 
