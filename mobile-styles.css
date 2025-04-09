@@ -1165,8 +1165,10 @@ a, button {
         background-color: #333;
     }
     
+    /* Improved table styling for dark mode */
     table, th, td {
         border-color: #444;
+        color: #e0e0e0;
     }
     
     th {
@@ -1174,7 +1176,29 @@ a, button {
         color: #b48cff;
     }
     
+    /* Enhanced contrast for alternating table rows in dark mode */
+    tr {
+        background-color: #1e1e1e;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #2a2a2a;
+    }
+    
     tr:hover {
-        background-color: #2d2d2d;
+        background-color: #3a3a3a;
+    }
+    
+    /* Specific improvement for comparison tables */
+    .comparison-table tr {
+        background-color: #1e1e1e;
+    }
+    
+    .comparison-table tr:nth-child(even) {
+        background-color: #2a2a2a;
+    }
+    
+    .comparison-table td {
+        color: #d0d0d0;
     }
 }
