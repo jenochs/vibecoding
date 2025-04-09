@@ -1,6 +1,6 @@
 # VibeCoding with Claude Code
 
-![VibeCoding with Claude Code](https://raw.githubusercontent.com/jenochs/vibecoding/main/banner.png)
+![VibeCoding with Claude Code](https://raw.githubusercontent.com/jenochs/vibecoding/main/banner.svg)
 
 ## 📚 About This Project
 
