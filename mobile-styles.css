@@ -1142,6 +1142,17 @@ a, button {
         border-left-color: #b48cff;
     }
     
+    /* Improved workaround boxes for dark mode */
+    .workaround-box {
+        background-color: rgba(74, 130, 69, 0.15);
+        border-left-color: #6bba63;
+        color: #d0d0d0;
+    }
+    
+    .workaround-title {
+        color: #6bba63;
+    }
+    
     code, pre {
         background-color: #2d2d2d;
         color: #e0e0e0;
