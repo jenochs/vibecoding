@@ -25,7 +25,7 @@
     </nav>
 
     <div class="content">
-        <h1>4. Fetch vs. Tavily</h1>
+        <h1>4. WebFetch vs. Tavily</h1>
         
         <div class="diagram">
             <svg width="600" height="400" viewBox="0 0 600 400">
@@ -34,7 +34,7 @@
                 
                 <!-- WebFetch section -->
                 <rect x="80" y="80" width="200" height="240" fill="white" stroke="#4a2a82" stroke-width="2" rx="5"/>
-                <text x="180" y="110" font-family="Arial" font-size="18" text-anchor="middle" fill="#4a2a82">Fetch</text>
+                <text x="180" y="110" font-family="Arial" font-size="18" text-anchor="middle" fill="#4a2a82">WebFetch</text>
                 
                 <!-- Tavily section -->
                 <rect x="320" y="80" width="200" height="240" fill="white" stroke="#4a2a82" stroke-width="2" rx="5"/>
@@ -76,14 +76,14 @@
             </svg>
         </div>
         
-        <p>When working with Claude Code, accessing external information is often essential. Two methods I leverage (many other options): Fetch and Tavily. Understanding their differences and optimal use cases can significantly enhance your VibeCoding workflow.</p>
+        <p>When working with Claude Code, accessing external information is often essential. Two methods I leverage (many other options): WebFetch and Tavily. Understanding their differences and optimal use cases can significantly enhance your VibeCoding workflow.</p>
         
         <h2>Understanding the Two Approaches</h2>
         
         <div class="comparison">
             <div class="comparison-item">
                 <div class="comparison-title">WebFetch</div>
-                <p>Fetch is Claude's built-in web access method that allows it to retrieve content from specific URLs that you provide. Due to security considerations, Fetch requires explicit URLs.</p>
+                <p>Fetch is Claude's built-in web access method that allows it to retrieve content from specific URLs that you provide. Due to security considerations, WebFetch requires explicit URLs.</p>
                 <ul class="feature-list">
                     <li>Requires specific URLs</li>
                     <li>Direct content access</li>
@@ -116,7 +116,7 @@
             </tr>
             <tr>
                 <td>Accessing specific documentation</td>
-                <td>Fetch</td>
+                <td>WebFetch</td>
                 <td>When you know the exact URL of the documentation you need</td>
             </tr>
             <tr>
@@ -126,7 +126,7 @@
             </tr>
             <tr>
                 <td>Reading API documentation</td>
-                <td>Fetch</td>
+                <td>WebFetch</td>
                 <td>Direct access to specific API endpoints and methods</td>
             </tr>
             <tr>
@@ -141,7 +141,7 @@
             </tr>
             <tr>
                 <td>Accessing version-specific information</td>
-                <td>Fetch</td>
+                <td>WebFetch</td>
                 <td>Direct access to specific version documentation</td>
             </tr>
         </table>
