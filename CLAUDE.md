@@ -157,6 +157,7 @@ vibecoding/
 - Standardized touch targets for better mobile accessibility with consistent flexbox styling
 - Improved line-height consistency across interactive elements
 - Fixed visibility issue with subtitle text in header (removed opacity and increased contrast)
+- Standardized header subtitle markup across all pages for consistency (replaced p tags with div.subtitle)
 
 ## Visual Style Audit
 
@@ -277,11 +278,12 @@ Each page has been reviewed for visual consistency:
 
 - **Index Page**: Updated with new landing design and diagram
 - **Page 1-10**: All pages audited for consistency in:
-  - Header styles and spacing
+  - Header styles and spacing (with standardized subtitle rendering)
   - Card and UI element appearances
   - SVG diagram colors and proportions
-  - Code block formatting
-  - Dark mode rendering
+  - Code block formatting with unified monospace font
+  - Dark mode rendering with optimized contrast
+  - Interactive element alignment and touch targets
 
 ### Dark Mode Implementation
 - Comprehensive dark mode using Anthropic's color inversion strategy
