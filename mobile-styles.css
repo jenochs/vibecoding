@@ -1437,33 +1437,37 @@ a, button {
     }
     
     /* SVG colors in dark mode */
-    svg {
+    svg:not(.terminal-svg) {
         fill: var(--color-cloud-light);
         stroke: var(--color-cloud-light);
     }
     
-    svg text {
+    svg:not(.terminal-svg) text {
         fill: var(--color-cloud-light);
         stroke: none;
     }
     
-    svg rect, svg circle, svg path, svg line, svg polygon {
+    svg:not(.terminal-svg) rect, 
+    svg:not(.terminal-svg) circle, 
+    svg:not(.terminal-svg) path, 
+    svg:not(.terminal-svg) line, 
+    svg:not(.terminal-svg) polygon {
         stroke: var(--color-cloud-light);
     }
     
-    svg .fill-primary {
+    svg:not(.terminal-svg) .fill-primary {
         fill: var(--color-cloud-light);
     }
     
-    svg .stroke-primary {
+    svg:not(.terminal-svg) .stroke-primary {
         stroke: var(--color-cloud-light);
     }
     
-    svg .fill-secondary {
+    svg:not(.terminal-svg) .fill-secondary {
         fill: var(--color-slate-medium);
     }
     
-    svg .stroke-secondary {
+    svg:not(.terminal-svg) .stroke-secondary {
         stroke: var(--color-slate-medium);
     }
     
