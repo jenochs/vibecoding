@@ -156,6 +156,7 @@ vibecoding/
 - Fixed vertical alignment in mobile navigation links and buttons to ensure proper centering
 - Standardized touch targets for better mobile accessibility with consistent flexbox styling
 - Improved line-height consistency across interactive elements
+- Fixed visibility issue with subtitle text in header (removed opacity and increased contrast)
 
 ## Visual Style Audit
 
