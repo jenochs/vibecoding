@@ -158,6 +158,10 @@ vibecoding/
 - Improved line-height consistency across interactive elements
 - Fixed visibility issue with subtitle text in header (removed opacity and increased contrast)
 - Standardized header subtitle markup across all pages for consistency (replaced p tags with div.subtitle)
+- Fixed vertical alignment in "Read More" and navigation buttons on mobile devices
+- Enhanced card layout to properly position buttons with consistent spacing
+- Added explicit width/height properties to buttons for better rendering across browsers
+- Updated media queries to maintain consistent button styling across breakpoints
 
 ## Visual Style Audit
 
@@ -195,6 +199,10 @@ All UI components have been audited for consistency across pages:
    - Vertically centered text using flexbox (display: inline-flex, align-items: center, justify-content: center)
    - Consistent line-height (1.2) for better text rendering
    - Standardized touch targets for better mobile accessibility (min-height: 44px)
+   - Fixed alignment issues with explicit width/height properties
+   - Maintained consistent alignment across all viewport sizes
+   - Improved card-link alignment with proper container spacing
+   - Ensured consistent vertical centering in dark mode
 
 3. **SVG Diagrams** - Audited and updated:
    - Consistent stroke widths and colors

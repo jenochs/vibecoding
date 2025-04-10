@@ -468,6 +468,7 @@ pre {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    align-items: flex-start; /* Added to align button properly */
 }
 
 .card-title {
@@ -501,16 +502,22 @@ pre {
     transition: all 0.1s cubic-bezier(.165,.84,.44,1);
     text-align: center;
     min-height: 48px;
-    line-height: 1;
+    line-height: 1.2;
     border: 1px solid var(--color-slate-dark);
-    align-self: flex-start;
+    align-self: center; /* Changed from flex-start to center */
     letter-spacing: -0.01em;
+    width: auto; /* Added to ensure it doesn't stretch */
+    height: auto; /* Added to ensure proper height calculation */
 }
 
 @media (min-width: 768px) {
     .card-link {
         padding: 12px 24px;
         min-height: 48px;
+        /* Maintain consistent vertical centering */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -552,12 +559,18 @@ pre {
     justify-content: center;
     letter-spacing: -0.01em;
     line-height: 1.2;
+    width: auto; /* Added to ensure it doesn't stretch */
+    height: auto; /* Added to ensure proper height calculation */
 }
 
 @media (min-width: 768px) {
     .nav-button {
         padding: 12px 24px;
         min-height: 48px;
+        /* Maintain consistent vertical centering */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -1420,6 +1433,10 @@ a, button {
         background-color: var(--color-ivory-light);
         color: var(--color-slate-dark);
         border-color: var(--color-ivory-light);
+        /* Maintain consistent vertical centering */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .card-link:hover, .card-link:active,
