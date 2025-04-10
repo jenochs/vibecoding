@@ -404,6 +404,37 @@ pre {
     padding-bottom: 10px;
 }
 
+/* Quick links at the top of the page */
+.quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.quick-link {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--color-slate-dark);
+    color: var(--color-ivory-light);
+    padding: 12px 24px;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.1s cubic-bezier(.165,.84,.44,1);
+    text-align: center;
+    min-height: 48px;
+    line-height: 1.2;
+    border: 1px solid var(--color-slate-dark);
+    letter-spacing: -0.01em;
+}
+
+.quick-link:hover, .quick-link:active {
+    background-color: var(--color-slate-medium);
+    border-color: var(--color-slate-medium);
+    transform: translateY(-2px);
+}
+
 /* Responsive card grid */
 .series-container {
     display: grid;
@@ -1364,6 +1395,7 @@ tr:hover {
 
 .series-nav-list a {
     display: flex;
+    align-items: center; /* Add vertical alignment */
     text-decoration: none;
     color: var(--color-slate-dark);
     padding: 8px 12px;
@@ -1371,6 +1403,7 @@ tr:hover {
     transition: all 0.2s ease;
     border: 1px solid transparent;
     font-weight: 500;
+    min-height: 44px; /* Improved touch target */
 }
 
 .series-nav-list a:hover {
@@ -1496,7 +1529,7 @@ a, button {
     }
     
     /* Button styling */
-    .card-link, .nav-button, .author-link {
+    .card-link, .nav-button, .author-link, .quick-link {
         background-color: var(--color-ivory-light);
         color: var(--color-slate-dark);
         border-color: var(--color-ivory-light);
@@ -1508,7 +1541,8 @@ a, button {
     
     .card-link:hover, .card-link:active,
     .nav-button:hover, .nav-button:active,
-    .author-link:hover, .author-link:active {
+    .author-link:hover, .author-link:active,
+    .quick-link:hover, .quick-link:active {
         background-color: var(--color-ivory-medium);
         border-color: var(--color-ivory-medium);
     }
