@@ -822,11 +822,11 @@ tr:hover {
 
 /* Limitation boxes - mobile friendly */
 .limitation-box {
-    background-color: #f8f9fa;
-    border-radius: 10px;
+    background-color: var(--background-off);
+    border-radius: var(--radius-md);
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -844,13 +844,13 @@ tr:hover {
 .limitation-icon {
     min-width: 50px;
     height: 50px;
-    background-color: #4a2a82;
+    background-color: var(--color-slate-dark);
     opacity: 0.8;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--color-ivory-light);
     font-size: 24px;
     font-weight: bold;
 }
@@ -860,7 +860,7 @@ tr:hover {
 .limitation-title {
     font-weight: bold;
     margin-bottom: 5px;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     text-align: center;
 }
 
@@ -872,29 +872,29 @@ tr:hover {
 
 /* Workaround boxes */
 .workaround-box {
-    background-color: #f0f8ff;
-    border-left: 4px solid #4a8245;
+    background-color: var(--background-off);
+    border-left: 4px solid var(--color-book-cloth);
     padding: 15px;
     margin: 20px 0;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 .workaround-title {
     font-weight: bold;
     margin-bottom: 5px;
-    color: #4a8245;
+    color: var(--color-book-cloth);
 }
 
 /* Integration cards and features - mobile friendly */
 .integration-card {
-    background-color: #f8f9fa;
-    border-radius: 10px;
+    background-color: var(--background-off);
+    border-radius: var(--radius-md);
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
 }
 .integration-card-title {
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     margin-bottom: 10px;
     font-size: 1.2em;
 }
@@ -912,14 +912,14 @@ tr:hover {
 }
 
 .feature-item {
-    background-color: #f8f9fa;
-    border-radius: 8px;
+    background-color: var(--background-off);
+    border-radius: var(--radius-sm);
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
 }
 .feature-title {
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     margin-bottom: 10px;
 }
 
@@ -1283,13 +1283,13 @@ tr:hover {
 .strategy-icon {
     min-width: 40px;
     height: 40px;
-    background-color: #4a2a82;
+    background-color: var(--color-slate-dark);
     opacity: 0.8;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--color-ivory-light);
     font-size: 20px;
     font-weight: bold;
 }
@@ -1299,7 +1299,7 @@ tr:hover {
 .strategy-title {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     text-align: center;
 }
 
@@ -1340,6 +1340,17 @@ a, button {
         --border-color: var(--color-slate-light);
         --callout-bg: rgba(94, 93, 89, 0.3);
         --shadow-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Workaround boxes in dark mode */
+    .workaround-box {
+        background-color: rgba(204, 120, 92, 0.15);
+        border-left-color: var(--color-book-cloth);
+        color: var(--color-cloud-light);
+    }
+    
+    .workaround-title {
+        color: var(--color-book-cloth);
     }
     
     body {
@@ -1409,13 +1420,13 @@ a, button {
     
     /* Improved workaround boxes for dark mode */
     .workaround-box {
-        background-color: rgba(74, 130, 69, 0.15);
-        border-left-color: #6bba63;
+        background-color: rgba(204, 120, 92, 0.15);
+        border-left-color: var(--color-book-cloth);
         color: var(--color-cloud-light);
     }
     
     .workaround-title {
-        color: #8ED584;
+        color: var(--color-book-cloth);
     }
     
     /* UI elements */
