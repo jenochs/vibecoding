@@ -4,19 +4,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #5436DA; /* Anthropic purple */
-    --primary-light: #7B61FF;
-    --primary-dark: #452BB1;
-    --text-color: #141414;
-    --text-light: #6B7280;
-    --background-light: #FFFFFF;
-    --background-off: #F9FAFB;
-    --border-color: #E5E7EB;
-    --callout-bg: #F5F3FF;
-    --shadow-color: rgba(84, 54, 218, 0.08);
+    /* Anthropic branding colors based on their website */
+    --color-slate-dark: #141413;
+    --color-slate-medium: #3d3d3a;
+    --color-slate-light: #5e5d59;
+    --color-cloud-dark: #87867f;
+    --color-cloud-medium: #b0aea5;
+    --color-cloud-light: #d1cfc5;
+    --color-ivory-dark: #e8e6dc;
+    --color-ivory-medium: #f0eee6;
+    --color-ivory-light: #faf9f5;
+    --color-book-cloth: #cc785c;
+    --color-fig: #c46686;
+    --color-heather: #cbcadb;
+    
+    /* Theme variables for light mode */
+    --primary-color: var(--color-slate-dark);
+    --primary-light: var(--color-slate-medium);
+    --primary-dark: #000000;
+    --text-color: var(--color-slate-dark);
+    --text-light: var(--color-slate-light);
+    --background-light: var(--color-ivory-light);
+    --background-off: var(--color-ivory-medium);
+    --border-color: var(--color-ivory-dark);
+    --callout-bg: var(--color-ivory-medium);
+    --shadow-color: rgba(20, 20, 19, 0.08);
+    
+    /* Sizing and spacing */
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 16px;
+    --spacer-small: 16px;
+    --spacer-medium: 32px;
+    --spacer-large: 64px;
 }
 
 body {
@@ -30,6 +50,10 @@ body {
     overflow-x: hidden;
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: -0.01em;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Responsive container */
@@ -42,9 +66,8 @@ body {
 
 /* Header */
 header {
-    background-color: var(--primary-color);
-    background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
-    color: white;
+    background-color: var(--color-slate-dark);
+    color: var(--color-ivory-light);
     padding: 40px 24px;
     text-align: center;
     border-radius: var(--radius-lg);
@@ -61,58 +84,59 @@ header {
 
 h1 {
     margin: 0;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
+    font-size: clamp(2.5rem, 5vw, 5.5rem);
+    font-weight: 500;
+    color: var(--color-slate-dark);
     padding-bottom: 12px;
     margin-top: 40px;
     word-wrap: break-word;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
+    letter-spacing: -0.03em;
+    line-height: 95%;
 }
 
 @media (min-width: 768px) {
     h1 {
-        font-size: 3.5rem;
+        font-size: clamp(2.5rem, 5vw, 5.5rem);
     }
 }
 
 header h1 {
-    color: white;
+    color: var(--color-ivory-light);
     border-bottom: none;
     padding-bottom: 0;
     margin-top: 0;
-    font-size: 2.2rem;
+    font-size: clamp(2rem, 3.33vw, 2.8rem);
 }
 
 @media (min-width: 768px) {
     header h1 {
-        font-size: 3.5rem;
+        font-size: clamp(2.5rem, 5vw, 5.5rem);
     }
 }
 
 h2 {
-    color: var(--primary-color);
-    font-size: 1.75rem;
-    font-weight: 600;
+    color: var(--color-slate-dark);
+    font-size: clamp(2rem, 3.33vw, 2.8rem);
+    font-weight: 500;
     word-wrap: break-word;
-    letter-spacing: -0.01em;
-    line-height: 1.3;
+    letter-spacing: -0.025em;
+    line-height: 110%;
     margin-top: 40px;
     margin-bottom: 24px;
 }
 
 @media (min-width: 768px) {
     h2 {
-        font-size: 2.25rem;
+        font-size: clamp(2rem, 3.33vw, 2.8rem);
     }
 }
 
 p {
     margin-bottom: 24px;
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: var(--text-color);
-    line-height: 1.7;
+    line-height: 155%;
+    letter-spacing: -0.01em;
 }
 
 /* Navigation - Mobile first */
@@ -342,12 +366,12 @@ pre {
 }
 
 .card {
-    background-color: var(--background-light);
-    border-radius: var(--radius-lg);
+    background-color: var(--color-ivory-light);
+    border-radius: var(--radius-md);
     overflow: hidden;
     box-shadow: 0 4px 20px var(--shadow-color);
-    transition: all 0.3s ease;
-    border: 1px solid var(--border-color);
+    transition: all 0.2s cubic-bezier(.165,.84,.44,1);
+    border: 1px solid var(--color-ivory-dark);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -355,23 +379,23 @@ pre {
 
 .card:hover, .card:active {
     transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(84, 54, 218, 0.15);
-    border-color: var(--primary-light);
+    box-shadow: 0 12px 30px rgba(20, 20, 19, 0.08);
+    border-color: var(--color-cloud-medium);
 }
 
 .card-image {
     height: 180px;
-    background-color: var(--background-off);
+    background-color: var(--color-ivory-medium);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    transition: all 0.3s ease;
-    border-bottom: 1px solid var(--border-color);
+    transition: all 0.2s cubic-bezier(.165,.84,.44,1);
+    border-bottom: 1px solid var(--color-ivory-dark);
 }
 
 .card:hover .card-image {
-    background-color: var(--callout-bg);
+    background-color: var(--color-ivory-dark);
 }
 
 @media (min-width: 768px) {
@@ -388,49 +412,50 @@ pre {
 }
 
 .card-title {
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-size: clamp(1.25rem, 1.67vw, 1.5rem);
+    font-weight: 500;
     margin-bottom: 12px;
-    color: var(--primary-color);
-    line-height: 1.3;
+    color: var(--color-slate-dark);
+    line-height: 125%;
+    letter-spacing: -0.01em;
 }
 
 .card-description {
-    color: var(--text-light);
+    color: var(--color-slate-light);
     margin-bottom: 20px;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 155%;
+    letter-spacing: -0.01em;
     flex-grow: 1;
 }
 
 .card-link {
     display: inline-block;
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--color-slate-dark);
+    color: var(--color-ivory-light);
     padding: 12px 24px;
     border-radius: var(--radius-sm);
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.2s ease;
+    transition: all 0.1s cubic-bezier(.165,.84,.44,1);
     text-align: center;
-    min-height: 44px;
+    min-height: 48px;
     line-height: 20px;
-    box-shadow: 0 2px 6px rgba(84, 54, 218, 0.25);
-    border: 1px solid transparent;
+    border: 1px solid var(--color-slate-dark);
     align-self: flex-start;
+    letter-spacing: -0.01em;
 }
 
 @media (min-width: 768px) {
     .card-link {
-        padding: 10px 20px;
-        min-height: auto;
-        line-height: inherit;
+        padding: 12px 24px;
+        min-height: 48px;
     }
 }
 
 .card-link:hover, .card-link:active {
-    background-color: var(--primary-dark);
-    box-shadow: 0 4px 12px rgba(84, 54, 218, 0.3);
+    background-color: var(--color-slate-medium);
+    border-color: var(--color-slate-medium);
     transform: translateY(-2px);
 }
 
@@ -1201,16 +1226,14 @@ a, button {
 
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
+    /* Dark theme colors based on Anthropic's dark mode */
     :root {
-        --primary-color: #7B61FF; /* Brighter purple for dark mode */
-        --primary-light: #9D87FF;
-        --primary-dark: #5436DA;
-        --text-color: #F9FAFB;
-        --text-light: #D1D5DB;
-        --background-light: #111827;
-        --background-off: #1F2937;
-        --border-color: #374151;
-        --callout-bg: rgba(123, 97, 255, 0.15);
+        --text-color: var(--color-ivory-light);
+        --text-light: var(--color-cloud-light);
+        --background-light: var(--color-slate-dark);
+        --background-off: var(--color-slate-medium);
+        --border-color: var(--color-slate-light);
+        --callout-bg: rgba(94, 93, 89, 0.3);
         --shadow-color: rgba(0, 0, 0, 0.3);
     }
     
@@ -1220,15 +1243,16 @@ a, button {
     }
     
     h1, h2, h3, h4, h5, h6 {
-        color: var(--primary-light);
+        color: var(--color-ivory-light);
     }
     
     header {
-        background-image: linear-gradient(135deg, #5436DA 0%, #7B61FF 100%);
+        background-color: var(--color-slate-medium);
+        border: 1px solid var(--color-slate-light);
     }
     
     header h1 {
-        color: white;
+        color: var(--color-ivory-light);
     }
     
     .content, .card, .comparison-item, .markdown-card, 
@@ -1236,53 +1260,53 @@ a, button {
     .integration-card, .repository-card, .list-technique,
     .example-wrapper, .device-card, .strategy-card,
     .list-example, .folder-structure {
-        background-color: var(--background-off);
-        border-color: var(--border-color);
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+        background-color: var(--color-slate-medium);
+        border-color: var(--color-slate-light);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
     }
     
     /* Card styling in dark mode */
     .card:hover, .card:active {
-        border-color: var(--primary-light);
-        box-shadow: 0 12px 40px rgba(123, 97, 255, 0.25);
+        border-color: var(--color-cloud-medium);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
     }
     
     .card-image {
-        background-color: rgba(31, 41, 55, 0.8);
-        border-color: var(--border-color);
+        background-color: var(--color-slate-dark);
+        border-color: var(--color-slate-light);
     }
     
     .card:hover .card-image {
-        background-color: rgba(123, 97, 255, 0.1);
+        background-color: #2a2a28;
     }
     
     .card-title {
-        color: var(--primary-light);
+        color: var(--color-ivory-light);
     }
     
     .card-description {
-        color: var(--text-light);
+        color: var(--color-cloud-light);
     }
     
     /* Button styling */
     .card-link, .nav-button, .author-link {
-        background-color: var(--primary-color);
-        color: white;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        background-color: var(--color-ivory-light);
+        color: var(--color-slate-dark);
+        border-color: var(--color-ivory-light);
     }
     
     .card-link:hover, .card-link:active,
     .nav-button:hover, .nav-button:active,
     .author-link:hover, .author-link:active {
-        background-color: var(--primary-light);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        background-color: var(--color-ivory-medium);
+        border-color: var(--color-ivory-medium);
     }
     
     /* Improved workaround boxes for dark mode */
     .workaround-box {
         background-color: rgba(74, 130, 69, 0.15);
         border-left-color: #6bba63;
-        color: var(--text-light);
+        color: var(--color-cloud-light);
     }
     
     .workaround-title {
@@ -1291,12 +1315,12 @@ a, button {
     
     /* UI elements */
     .step-number, .limitation-icon, .strategy-icon, .progress-bar {
-        background-color: var(--primary-color);
+        background-color: var(--color-cloud-dark);
     }
     
     .tip {
-        background-color: var(--callout-bg);
-        border-left-color: var(--primary-light);
+        background-color: rgba(94, 93, 89, 0.3);
+        border-left-color: var(--color-cloud-medium);
     }
     
     .tip-title, .folder-name, .feature-list li:before,
@@ -1305,70 +1329,70 @@ a, button {
     .integration-card-title, .step-title, .repository-title, 
     .list-title, .technique-title, .example-title, 
     .device-title, .strategy-title {
-        color: var(--primary-light);
+        color: var(--color-ivory-light);
     }
     
     /* Code elements */
     code, pre {
-        background-color: rgba(0, 0, 0, 0.3);
-        color: #e2e8f0;
-        border-color: var(--border-color);
+        background-color: var(--color-slate-dark);
+        color: var(--color-ivory-medium);
+        border-color: var(--color-slate-light);
     }
     
     .code-example {
-        background-color: rgba(0, 0, 0, 0.3);
-        border-color: var(--border-color);
+        background-color: var(--color-slate-dark);
+        border-color: var(--color-slate-light);
     }
     
     /* Navigation */
     nav, footer {
-        background-color: var(--background-off);
-        color: var(--text-color);
-        border-color: var(--border-color);
+        background-color: var(--color-slate-medium);
+        color: var(--color-ivory-light);
+        border-color: var(--color-slate-light);
     }
     
     nav a {
-        color: var(--primary-light);
+        color: var(--color-ivory-light);
     }
     
     nav a:hover, nav a:active {
-        background-color: var(--callout-bg);
+        background-color: var(--color-slate-light);
     }
     
     /* Table styling */
     table, th, td {
-        border-color: var(--border-color);
-        color: var(--text-color);
+        border-color: var(--color-slate-light);
+        color: var(--color-ivory-light);
     }
     
     th {
-        background-color: rgba(0, 0, 0, 0.3);
-        color: var(--primary-light);
+        background-color: var(--color-slate-dark);
+        color: var(--color-ivory-light);
     }
     
     tr {
-        background-color: var(--background-off);
+        background-color: var(--color-slate-medium);
     }
     
     tr:nth-child(even) {
-        background-color: rgba(55, 65, 81, 0.7);
+        background-color: #4a4a46;
     }
     
     tr:hover {
-        background-color: rgba(75, 85, 99, 0.7);
+        background-color: var(--color-slate-light);
     }
     
     /* Specific tables */
     .comparison-table tr {
-        background-color: var(--background-off);
+        background-color: var(--color-slate-medium);
     }
     
     .comparison-table tr:nth-child(even) {
-        background-color: rgba(55, 65, 81, 0.7);
+        background-color: #4a4a46;
     }
     
     .comparison-table td {
-        color: var(--text-light);
+        color: var(--color-cloud-light);
     }
     
     /* SVG colors in dark mode */
@@ -1376,20 +1400,20 @@ a, button {
     .card-image svg path,
     .diagram svg text,
     .diagram svg path {
-        fill: var(--primary-light);
-        stroke: var(--primary-light);
+        fill: var(--color-cloud-light);
+        stroke: var(--color-cloud-light);
     }
     
     .card-image svg rect,
     .card-image svg circle,
     .diagram svg rect,
     .diagram svg circle {
-        stroke: var(--primary-light);
+        stroke: var(--color-cloud-light);
     }
     
     /* About author section */
     .about-author {
-        background-color: var(--background-off);
-        border-color: var(--border-color);
+        background-color: var(--color-slate-medium);
+        border-color: var(--color-slate-light);
     }
 }
