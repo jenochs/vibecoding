@@ -228,6 +228,64 @@ pre {
     margin-top: 10px;
 }
 
+/* Introduction section styles */
+.introduction {
+    margin-bottom: 40px;
+}
+
+.introduction h2 {
+    margin-top: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.introduction p {
+    font-size: 1.05em;
+    line-height: 1.7;
+}
+
+.introduction ul {
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.introduction li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* About author section */
+.about-author {
+    margin-top: 50px;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.about-author h2 {
+    color: #4a2a82;
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.author-link {
+    display: inline-block;
+    background-color: #4a2a82;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.author-link:hover {
+    background-color: #351d5e;
+}
+
 /* Responsive card grid */
 .series-container {
     display: grid;
