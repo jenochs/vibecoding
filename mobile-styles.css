@@ -267,8 +267,34 @@ svg:not(.terminal-svg) polygon {
 }
 
 /* Terminal SVG specific styling */
+.terminal-svg {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
 .terminal-svg text {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Mobile-specific enhancements for terminal SVGs */
+@media (max-width: 767px) {
+    .terminal-svg text {
+        fill: #f0eee6 !important;
+    }
+    
+    .terminal-svg text[fill="#6bba63"] {
+        fill: #6bba63 !important;
+    }
+    
+    .terminal-svg text[fill="#ff5f56"] {
+        fill: #ff5f56 !important;
+    }
+    
+    .terminal-svg rect[fill="#141413"], 
+    .terminal-svg rect[fill="#1e1e1e"],
+    .terminal-svg rect[fill="#2c2c32"] {
+        fill: #141413 !important;
+    }
 }
 
 svg .fill-primary {
@@ -1497,6 +1523,36 @@ a, button {
     
     svg:not(.terminal-svg) .stroke-secondary {
         stroke: var(--color-slate-medium);
+    }
+    
+    /* Force correct colors for terminal-svg in dark mode */
+    .terminal-svg text {
+        fill: #f0eee6 !important;
+    }
+    
+    .terminal-svg text[fill="#6bba63"] {
+        fill: #6bba63 !important;
+    }
+    
+    .terminal-svg text[fill="#ff5f56"] {
+        fill: #ff5f56 !important;
+    }
+    
+    /* Preserve syntax highlighting colors */
+    .terminal-svg text[fill="#569cd6"] {
+        fill: #569cd6 !important;
+    }
+    
+    .terminal-svg text[fill="#dcdcaa"] {
+        fill: #dcdcaa !important;
+    }
+    
+    .terminal-svg text[fill="#c586c0"] {
+        fill: #c586c0 !important;
+    }
+    
+    .terminal-svg text[fill="#6a9955"] {
+        fill: #6a9955 !important;
     }
     
     /* About author section */
