@@ -890,20 +890,39 @@ tr:hover {
 
 /* VS Code UI simulation */
 .vscode-ui {
-    background-color: #2c2c32;
+    background-color: #1e1e1e;
     color: #f0f0f0;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     margin: 20px 0;
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     overflow-x: auto;
     white-space: pre-wrap;
     word-break: break-word;
+    border: 1px solid var(--color-slate-light);
+}
+
+.vscode-ui p {
+    margin-bottom: 8px;
+    color: #d4d4d4;
 }
 
 @media (min-width: 768px) {
     .vscode-ui {
         padding: 20px;
+    }
+}
+
+/* Fix for dark mode */
+@media (prefers-color-scheme: dark) {
+    .vscode-ui {
+        background-color: #1e1e1e;
+        color: #d4d4d4;
+        border-color: #3d3d3a;
+    }
+    
+    .vscode-ui p {
+        color: #d4d4d4;
     }
 }
 

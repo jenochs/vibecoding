@@ -178,15 +178,13 @@
                 <div class="step-title">Project Planning with Claude Code</div>
                 <p>Start by discussing your project requirements with Claude Code. It can help break down the problem, suggest a suitable architecture, and outline the key components.</p>
                 <div class="terminal-demo">
-                    <div class="vscode-ui">
-                        <p>> I need to build a React application for managing inventory with real-time updates.</p>
-                        <p>Claude Code: Let's break this down into key components:</p>
-                        <p>1. Frontend React components (dashboards, forms, tables)</p>
-                        <p>2. State management (likely Redux or Context API)</p>
-                        <p>3. Real-time data handling (WebSockets or Firebase)</p>
-                        <p>4. Authentication and authorization</p>
-                        <p>...</p>
-                    </div>
+                    <p><span class="terminal-prompt">></span> <span class="terminal-command">I need to build a React application for managing inventory with real-time updates.</span></p>
+                    <p><span class="terminal-claude">Claude Code:</span> <span class="terminal-output">Let's break this down into key components:</span></p>
+                    <p class="terminal-output" style="margin-left: 15px;">1. Frontend React components (dashboards, forms, tables)</p>
+                    <p class="terminal-output" style="margin-left: 15px;">2. State management (likely Redux or Context API)</p>
+                    <p class="terminal-output" style="margin-left: 15px;">3. Real-time data handling (WebSockets or Firebase)</p>
+                    <p class="terminal-output" style="margin-left: 15px;">4. Authentication and authorization</p>
+                    <p class="terminal-output">...</p>
                 </div>
             </div>
         </div>
@@ -215,12 +213,12 @@
                 <div class="step-title">Refinement and Optimization with Claude Code</div>
                 <p>Once you have a working implementation, share the code with Claude Code for analysis and optimization suggestions.</p>
                 <div class="vscode-ui">
-                    <p>> I've implemented the inventory dashboard component. Can you review it for performance and best practices?</p>
-                    <p>Claude Code: Looking at your implementation, I have a few suggestions:</p>
-                    <p>1. Consider using useMemo for filtered inventory to prevent unnecessary re-renders</p>
-                    <p>2. The useEffect has a potential memory leak without cleanup</p>
-                    <p>3. Error handling could be more robust with try/catch blocks</p>
-                    <p>Here's a refined version of the component...</p>
+                    <p><span style="color: #6bba63;">></span> I've implemented the inventory dashboard component. Can you review it for performance and best practices?</p>
+                    <p><span style="color: #e8e6dc; font-weight: 500;">Claude Code:</span> Looking at your implementation, I have a few suggestions:</p>
+                    <p style="margin-left: 15px;">1. Consider using useMemo for filtered inventory to prevent unnecessary re-renders</p>
+                    <p style="margin-left: 15px;">2. The useEffect has a potential memory leak without cleanup</p>
+                    <p style="margin-left: 15px;">3. Error handling could be more robust with try/catch blocks</p>
+                    <p><span style="color: #e8e6dc; font-weight: 500;">Claude Code:</span> Here's a refined version of the component...</p>
                 </div>
             </div>
         </div>
