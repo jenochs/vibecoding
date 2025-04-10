@@ -730,7 +730,7 @@ tr:hover {
 /* Terminal demonstrations */
 .terminal-demo {
     background-color: var(--color-slate-dark);
-    color: var(--color-cloud-light);
+    color: var(--color-ivory-light);
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     padding: 15px;
     border-radius: var(--radius-sm);
@@ -749,12 +749,40 @@ tr:hover {
 
 .terminal-prompt {
     color: #6bba63;
+    font-weight: bold;
 }
+
+.terminal-claude {
+    color: var(--color-ivory-dark);
+    font-weight: 500;
+}
+
 .terminal-output {
-    color: var(--color-cloud-medium);
-}
-.terminal-command {
     color: var(--color-cloud-light);
+}
+
+/* Fix for dark mode */
+@media (prefers-color-scheme: dark) {
+    .terminal-output {
+        color: var(--color-ivory-light);
+    }
+}
+
+.terminal-command {
+    color: var(--color-ivory-light);
+}
+
+.technique-example {
+    background-color: var(--color-slate-dark);
+    color: var(--color-ivory-light);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 15px;
+    border-radius: var(--radius-sm);
+    margin: 10px 0;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    word-break: break-word;
+    border: 1px solid var(--color-slate-light);
 }
 
 /* Limitation boxes - mobile friendly */
