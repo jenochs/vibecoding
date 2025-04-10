@@ -279,31 +279,34 @@ svg .stroke-secondary {
 }
 
 code {
-    background-color: #f0f0f0;
+    background-color: var(--color-slate-medium);
     padding: 2px 5px;
     border-radius: 3px;
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     word-break: break-word;
     white-space: pre-wrap;
+    color: var(--color-cloud-light);
 }
 
 pre {
-    background-color: #f8f9fa;
+    background-color: var(--color-slate-dark);
     padding: 15px;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     overflow-x: auto;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-slate-light);
     white-space: pre-wrap;
     word-break: break-all;
+    color: var(--color-cloud-light);
 }
 
 .code-example {
-    background-color: #f8f9fa;
+    background-color: var(--color-slate-dark);
     padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-slate-light);
     margin: 20px 0;
     overflow-x: auto;
+    color: var(--color-cloud-light);
 }
 
 @media (min-width: 768px) {
@@ -726,15 +729,16 @@ tr:hover {
 
 /* Terminal demonstrations */
 .terminal-demo {
-    background-color: #1e1e1e;
-    color: #f0f0f0;
+    background-color: var(--color-slate-dark);
+    color: var(--color-cloud-light);
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     margin: 20px 0;
     overflow-x: auto;
     white-space: pre-wrap;
     word-break: break-word;
+    border: 1px solid var(--color-slate-light);
 }
 
 @media (min-width: 768px) {
@@ -744,13 +748,13 @@ tr:hover {
 }
 
 .terminal-prompt {
-    color: #4a8245;
+    color: #6bba63;
 }
 .terminal-output {
-    color: #b0b0b0;
+    color: var(--color-cloud-medium);
 }
 .terminal-command {
-    color: #f0f0f0;
+    color: var(--color-cloud-light);
 }
 
 /* Limitation boxes - mobile friendly */
@@ -1351,17 +1355,7 @@ a, button {
         color: var(--color-ivory-light);
     }
     
-    /* Code elements */
-    code, pre {
-        background-color: var(--color-slate-dark);
-        color: var(--color-ivory-medium);
-        border-color: var(--color-slate-light);
-    }
-    
-    .code-example {
-        background-color: var(--color-slate-dark);
-        border-color: var(--color-slate-light);
-    }
+    /* Code elements - already styled with variables */
     
     /* Navigation */
     nav, footer {

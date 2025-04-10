@@ -39,26 +39,26 @@
         <div class="diagram">
             <svg width="600" height="400" viewBox="0 0 600 400">
                 <!-- Document outline with Claude.md structure -->
-                <rect x="100" y="50" width="400" height="300" fill="#f0f0f0" stroke="#4a2a82" stroke-width="3" rx="10"/>
-                <text x="300" y="80" font-family="Arial" font-size="20" text-anchor="middle" fill="#4a2a82">Claude.md File</text>
+                <rect x="100" y="50" width="400" height="300" class="fill-secondary stroke-primary" stroke-width="3" rx="10"/>
+                <text x="300" y="80" font-family="Inter" font-size="20" text-anchor="middle">Claude.md File</text>
                 
                 <!-- Documentation sections -->
-                <rect x="130" y="100" width="340" height="40" fill="white" stroke="#4a2a82" stroke-width="2" rx="5"/>
-                <text x="150" y="125" font-family="Arial" font-size="14" fill="#4a2a82">Project Overview & Current Status</text>
+                <rect x="130" y="100" width="340" height="40" class="fill-secondary stroke-primary" stroke-width="2" rx="5"/>
+                <text x="150" y="125" font-family="Inter" font-size="14">Project Overview & Current Status</text>
                 
-                <rect x="130" y="160" width="340" height="40" fill="white" stroke="#4a2a82" stroke-width="2" rx="5"/>
-                <text x="150" y="185" font-family="Arial" font-size="14" fill="#4a2a82">Technology Stack & Dependencies</text>
+                <rect x="130" y="160" width="340" height="40" class="fill-secondary stroke-primary" stroke-width="2" rx="5"/>
+                <text x="150" y="185" font-family="Inter" font-size="14">Technology Stack & Dependencies</text>
                 
-                <rect x="130" y="220" width="340" height="40" fill="white" stroke="#4a2a82" stroke-width="2" rx="5"/>
-                <text x="150" y="245" font-family="Arial" font-size="14" fill="#4a2a82">Current Implementation Status</text>
+                <rect x="130" y="220" width="340" height="40" class="fill-secondary stroke-primary" stroke-width="2" rx="5"/>
+                <text x="150" y="245" font-family="Inter" font-size="14">Current Implementation Status</text>
                 
-                <rect x="130" y="280" width="340" height="40" fill="white" stroke="#4a2a82" stroke-width="2" rx="5"/>
-                <text x="150" y="305" font-family="Arial" font-size="14" fill="#4a2a82">Next Steps & Planned Features</text>
+                <rect x="130" y="280" width="340" height="40" class="fill-secondary stroke-primary" stroke-width="2" rx="5"/>
+                <text x="150" y="305" font-family="Inter" font-size="14">Next Steps & Planned Features</text>
                 
                 <!-- Context window indicator -->
-                <rect x="50" y="370" width="500" height="20" fill="#e0e0e0" stroke="#888" stroke-width="1"/>
-                <rect x="50" y="370" width="200" height="20" fill="#4a2a82" opacity="0.3"/>
-                <text x="300" y="385" font-family="Arial" font-size="12" text-anchor="middle" fill="#666">Context Window (200,000 tokens)</text>
+                <rect x="50" y="370" width="500" height="20" fill="var(--color-ivory-dark)" stroke="var(--border-color)" stroke-width="1"/>
+                <rect x="50" y="370" width="200" height="20" class="fill-primary" opacity="0.3"/>
+                <text x="300" y="385" font-family="Inter" font-size="12" text-anchor="middle">Context Window (200,000 tokens)</text>
             </svg>
         </div>
         
@@ -71,9 +71,9 @@
         <div class="example-wrapper">
             <div class="example-title">Context Loss Scenario</div>
             <div class="terminal-demo">
-                <p><span class="terminal-prompt">></span> I need to continue working on the user authentication system we were building yesterday.</p>
-                <p><span style="color: #9a6aff;">Claude Code:</span> I don't have context of our previous session in my current memory. Let me check your Claude.md file...</p>
-                <p><span style="color: #9a6aff;">Claude Code:</span> I see we were implementing JWT authentication with refresh tokens. You completed the token generation logic but were having issues with token validation. Let's continue from there.</p>
+                <p><span class="terminal-prompt">></span> <span class="terminal-command">I need to continue working on the user authentication system we were building yesterday.</span></p>
+                <p><span style="color: #e8e6dc; font-weight: 500;">Claude Code:</span> I don't have context of our previous session in my current memory. Let me check your Claude.md file...</p>
+                <p><span style="color: #e8e6dc; font-weight: 500;">Claude Code:</span> I see we were implementing JWT authentication with refresh tokens. You completed the token generation logic but were having issues with token validation. Let's continue from there.</p>
             </div>
         </div>
         
