@@ -387,9 +387,9 @@ pre {
 .about-author {
     margin-top: 50px;
     padding: 25px;
-    background-color: #f8f9fa;
-    border-radius: 10px;
-    border: 1px solid #ddd;
+    background-color: var(--background-off);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
 }
 
 .about-author h2 {
@@ -562,9 +562,9 @@ pre {
 footer {
     margin-top: 40px;
     text-align: center;
-    color: #666;
+    color: var(--text-light);
     padding: 20px;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--border-color);
 }
 
 /* Progress indicators */
@@ -604,7 +604,7 @@ footer {
 }
 
 .comparison-table th, .comparison-table td {
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     padding: 10px;
     text-align: left;
 }
@@ -614,7 +614,7 @@ footer {
     color: var(--color-slate-dark);
 }
 .comparison-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: var(--background-off);
 }
 
 /* Comparison sections - mobile friendly */
@@ -633,18 +633,18 @@ footer {
 
 .comparison-item {
     flex: 1;
-    background-color: #f8f9fa;
-    border-radius: 10px;
+    background-color: var(--background-off);
+    border-radius: var(--radius-md);
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
 }
 .comparison-title {
     text-align: center;
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     font-size: 1.2em;
     margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 10px;
 }
 .feature-list {
@@ -682,7 +682,7 @@ table {
 th, td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
 }
 th {
     background-color: var(--color-ivory-dark);
@@ -690,7 +690,7 @@ th {
     color: var(--color-slate-dark);
 }
 tr:hover {
-    background-color: #f9f9f9;
+    background-color: var(--background-off);
 }
 
 /* Markdown demonstration - mobile friendly */
@@ -711,10 +711,10 @@ tr:hover {
 .markdown-card {
     flex: 1;
     min-width: 100%;
-    background-color: #f8f9fa;
-    border-radius: 10px;
+    background-color: var(--background-off);
+    border-radius: var(--radius-md);
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
 }
 
 @media (min-width: 768px) {
@@ -725,10 +725,10 @@ tr:hover {
 
 .markdown-title {
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     font-size: 1.1em;
     margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 10px;
 }
 
@@ -748,17 +748,17 @@ tr:hover {
 
 .comparison-column {
     flex: 1;
-    background-color: #f8f9fa;
-    border-radius: 10px;
+    background-color: var(--background-off);
+    border-radius: var(--radius-md);
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
 }
 .comparison-header {
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     text-align: center;
     margin-bottom: 15px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 10px;
 }
 
@@ -981,12 +981,12 @@ tr:hover {
 .step-number {
     min-width: 40px;
     height: 40px;
-    background-color: #4a2a82;
+    background-color: var(--color-slate-dark);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--color-ivory-light);
     font-weight: bold;
     margin-bottom: 15px;
 }
@@ -1003,17 +1003,17 @@ tr:hover {
 }
 .step-title {
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     margin-bottom: 10px;
 }
 
 /* Synergy diagram */
 .synergy-diagram {
-    background-color: #f8f9fa;
-    border-radius: 10px;
+    background-color: var(--background-off);
+    border-radius: var(--radius-md);
     padding: 20px;
     margin: 30px 0;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     text-align: center;
     overflow-x: auto;
 }
@@ -1025,10 +1025,10 @@ tr:hover {
 
 /* Repository styles */
 .folder-structure {
-    background-color: #f8f9fa;
+    background-color: var(--background-off);
     padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
     margin: 20px 0;
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     overflow-x: auto;
@@ -1047,23 +1047,23 @@ tr:hover {
 }
 .folder-name {
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
 }
 .file {
     margin-left: 20px;
     margin-bottom: 3px;
-    color: #666;
+    color: var(--text-light);
 }
 .repository-card {
-    background-color: #f8f9fa;
-    border-radius: 10px;
+    background-color: var(--background-off);
+    border-radius: var(--radius-md);
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
 }
 .repository-title {
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     margin-bottom: 10px;
     font-size: 1.2em;
 }
@@ -1151,9 +1151,9 @@ tr:hover {
 }
 
 .list-example {
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background-color: var(--background-off);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
     padding: 15px;
     margin: 20px 0;
 }
@@ -1166,15 +1166,15 @@ tr:hover {
 
 .list-title {
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     margin-bottom: 10px;
 }
 .list-technique {
-    background-color: #f8f9fa;
-    border-radius: 8px;
+    background-color: var(--background-off);
+    border-radius: var(--radius-sm);
     padding: 15px;
     margin: 20px 0;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
 }
 
 @media (min-width: 768px) {
@@ -1185,7 +1185,7 @@ tr:hover {
 
 .technique-title {
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     margin-bottom: 10px;
     font-size: 1.1em;
 }
@@ -1203,9 +1203,9 @@ tr:hover {
 .example-wrapper {
     margin: 20px 0;
     padding: 15px;
-    background-color: #f8f9fa;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+    background-color: var(--background-off);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
 }
 
 @media (min-width: 768px) {
@@ -1216,7 +1216,7 @@ tr:hover {
 
 .example-title {
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     margin-bottom: 10px;
 }
 
@@ -1238,10 +1238,10 @@ tr:hover {
 .device-card {
     flex: 1;
     min-width: 100%;
-    background-color: #f8f9fa;
-    border-radius: 10px;
+    background-color: var(--background-off);
+    border-radius: var(--radius-md);
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
 }
 
 @media (min-width: 768px) {
@@ -1252,20 +1252,20 @@ tr:hover {
 
 .device-title {
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     margin-bottom: 15px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 10px;
 }
 
 /* Strategies - mobile friendly */
 .strategy-card {
-    background-color: #f8f9fa;
-    border-radius: 10px;
+    background-color: var(--background-off);
+    border-radius: var(--radius-md);
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
     align-items: center;
