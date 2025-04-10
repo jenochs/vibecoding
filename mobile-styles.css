@@ -1369,6 +1369,8 @@ tr:hover {
     border-radius: var(--radius-md);
     margin: 30px 0;
     border: 1px solid var(--border-color);
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 .series-navigation h3 {
@@ -1384,48 +1386,49 @@ tr:hover {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: block; /* Use block instead of grid for more reliable mobile layout */
+    display: flex; /* Flex instead of grid for better control */
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 /* Responsive layout for larger screens */
 @media (min-width: 768px) {
     .series-nav-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Always 2 columns on tablets */
-        gap: 25px; /* Increased horizontal gap */
-    }
-}
-
-@media (min-width: 1024px) {
-    .series-nav-list {
-        grid-template-columns: repeat(2, 1fr); /* Reduced to 2 columns to prevent crowding */
-        gap: 30px; /* Even larger gap for desktop */
+        column-count: 2; /* Use CSS columns instead of grid */
+        column-gap: 30px;
+        display: block; /* Needed for column layout */
     }
 }
 
 .series-nav-list li {
     margin-bottom: 15px; /* Increased spacing between items */
     width: 100%; /* Ensure full width */
+    display: block; /* Ensure proper display in columns */
+    break-inside: avoid; /* Prevent items from breaking across columns */
+    page-break-inside: avoid; /* For older browsers */
+    box-sizing: border-box;
 }
 
 .series-nav-list a {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Left-align content */
+    /* !important added to override default a styles */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important; /* Left-align content */
+    text-align: left !important;
     text-decoration: none;
     color: var(--color-slate-dark);
     background-color: var(--color-ivory-light); /* Card-like background */
-    padding: 12px 15px;
+    padding: 10px 12px !important;
     border-radius: var(--radius-sm);
     transition: all 0.2s ease;
     border: 1px solid var(--border-color); /* Always show border for card effect */
     font-weight: 500;
-    min-height: 44px; /* Improved touch target */
-    width: 100%; /* Full width for mobile */
+    min-height: 40px !important; /* Smaller to fit better */
+    width: 100% !important; /* Full width for mobile */
     box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Subtle shadow for card effect */
-    white-space: nowrap; /* Prevent text wrapping */
+    white-space: normal !important; /* Allow text wrapping */
     overflow: hidden; /* Hide overflow */
-    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+    box-sizing: border-box;
 }
 
 .series-nav-list a:hover {
@@ -1445,13 +1448,12 @@ tr:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 28px;
     width: 28px; /* Fixed width */
     height: 28px;
     border-radius: 50%;
     background-color: var(--color-slate-dark);
     color: var(--color-ivory-light);
-    margin-right: 16px; /* Increased margin for more spacing */
+    margin-right: 12px; /* Slightly reduced margin */
     font-size: 0.85rem;
     font-weight: bold;
     flex-shrink: 0; /* Prevent number from shrinking */
@@ -1469,7 +1471,7 @@ html {
 }
 
 /* Improve touch targets for better accessibility */
-a:not(.series-nav-list a), button {
+a, button {
     min-height: 44px;
     min-width: 44px;
     display: inline-flex;
@@ -1478,6 +1480,8 @@ a:not(.series-nav-list a), button {
     text-align: center;
     line-height: 1.2;
 }
+
+/* No duplicate override needed - already handled in the series navigation styles */
 
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
