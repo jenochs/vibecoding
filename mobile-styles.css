@@ -246,20 +246,29 @@ nav .home {
     height: auto;
 }
 
-/* Global SVG styling */
-svg {
+/* Global SVG styling - except terminal SVG */
+svg:not(.terminal-svg) {
     fill: var(--color-slate-dark);
     stroke: var(--color-slate-dark);
 }
 
-svg text {
+svg:not(.terminal-svg) text {
     fill: var(--color-slate-dark);
     stroke: none;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-svg rect, svg circle, svg path, svg line, svg polygon {
+svg:not(.terminal-svg) rect, 
+svg:not(.terminal-svg) circle, 
+svg:not(.terminal-svg) path, 
+svg:not(.terminal-svg) line, 
+svg:not(.terminal-svg) polygon {
     stroke: var(--color-slate-dark);
+}
+
+/* Terminal SVG specific styling */
+.terminal-svg text {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 svg .fill-primary {
