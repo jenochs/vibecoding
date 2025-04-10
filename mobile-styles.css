@@ -246,6 +246,38 @@ nav .home {
     height: auto;
 }
 
+/* Global SVG styling */
+svg {
+    fill: var(--color-slate-dark);
+    stroke: var(--color-slate-dark);
+}
+
+svg text {
+    fill: var(--color-slate-dark);
+    stroke: none;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+svg rect, svg circle, svg path, svg line, svg polygon {
+    stroke: var(--color-slate-dark);
+}
+
+svg .fill-primary {
+    fill: var(--color-slate-dark);
+}
+
+svg .stroke-primary {
+    stroke: var(--color-slate-dark);
+}
+
+svg .fill-secondary {
+    fill: var(--color-ivory-medium);
+}
+
+svg .stroke-secondary {
+    stroke: var(--color-ivory-medium);
+}
+
 code {
     background-color: #f0f0f0;
     padding: 2px 5px;
@@ -323,26 +355,10 @@ pre {
 }
 
 .about-author h2 {
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     margin-top: 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 10px;
-}
-
-.author-link {
-    display: inline-block;
-    background-color: #4a2a82;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 500;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.author-link:hover {
-    background-color: #351d5e;
 }
 
 /* Responsive card grid */
@@ -475,30 +491,33 @@ pre {
 }
 
 .nav-button {
-    background-color: #4a2a82;
-    color: white;
-    border: none;
+    background-color: var(--color-slate-dark);
+    color: var(--color-ivory-light);
+    border: 1px solid var(--color-slate-dark);
     padding: 15px 20px;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     text-decoration: none;
     font-weight: 500;
-    transition: background-color 0.3s ease;
+    transition: all 0.1s cubic-bezier(.165,.84,.44,1);
     text-align: center;
     /* Larger touch target for mobile */
     min-height: 44px;
     display: block;
+    letter-spacing: -0.01em;
 }
 
 @media (min-width: 768px) {
     .nav-button {
-        padding: 10px 20px;
-        min-height: auto;
+        padding: 12px 24px;
+        min-height: 48px;
         display: inline-block;
     }
 }
 
 .nav-button:hover, .nav-button:active {
-    background-color: #351d5e;
+    background-color: var(--color-slate-medium);
+    border-color: var(--color-slate-medium);
+    transform: translateY(-2px);
 }
 
 /* Footer */
@@ -512,22 +531,22 @@ footer {
 
 /* Progress indicators */
 .progress-container {
-    background-color: #e0e0e0;
-    border-radius: 5px;
+    background-color: var(--color-ivory-dark);
+    border-radius: var(--radius-sm);
     height: 30px;
     margin: 20px 0;
     position: relative;
 }
 .progress-bar {
-    background-color: #4a2a82;
+    background-color: var(--color-slate-dark);
     height: 100%;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     position: relative;
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--color-ivory-light);
     font-weight: bold;
 }
 
@@ -552,9 +571,9 @@ footer {
     text-align: left;
 }
 .comparison-table th {
-    background-color: #f0f0f0;
+    background-color: var(--color-ivory-dark);
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
 }
 .comparison-table tr:nth-child(even) {
     background-color: #f9f9f9;
@@ -601,7 +620,7 @@ footer {
 }
 .feature-list li:before {
     content: "✓";
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     position: absolute;
     left: 0;
     font-weight: bold;
@@ -628,9 +647,9 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 th {
-    background-color: #f0f0f0;
+    background-color: var(--color-ivory-dark);
     font-weight: bold;
-    color: #4a2a82;
+    color: var(--color-slate-dark);
 }
 tr:hover {
     background-color: #f9f9f9;
@@ -975,7 +994,7 @@ tr:hover {
 }
 .checklist li:before {
     content: "✓";
-    color: #4a2a82;
+    color: var(--color-slate-dark);
     position: absolute;
     left: 0;
     font-weight: bold;
@@ -1003,8 +1022,8 @@ tr:hover {
 .implementation-steps li:before {
     counter-increment: step;
     content: counter(step);
-    color: white;
-    background-color: #4a2a82;
+    color: var(--color-ivory-light);
+    background-color: var(--color-slate-dark);
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -1396,19 +1415,34 @@ a, button {
     }
     
     /* SVG colors in dark mode */
-    .card-image svg text,
-    .card-image svg path,
-    .diagram svg text,
-    .diagram svg path {
+    svg {
         fill: var(--color-cloud-light);
         stroke: var(--color-cloud-light);
     }
     
-    .card-image svg rect,
-    .card-image svg circle,
-    .diagram svg rect,
-    .diagram svg circle {
+    svg text {
+        fill: var(--color-cloud-light);
+        stroke: none;
+    }
+    
+    svg rect, svg circle, svg path, svg line, svg polygon {
         stroke: var(--color-cloud-light);
+    }
+    
+    svg .fill-primary {
+        fill: var(--color-cloud-light);
+    }
+    
+    svg .stroke-primary {
+        stroke: var(--color-cloud-light);
+    }
+    
+    svg .fill-secondary {
+        fill: var(--color-slate-medium);
+    }
+    
+    svg .stroke-secondary {
+        stroke: var(--color-slate-medium);
     }
     
     /* About author section */
