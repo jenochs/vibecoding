@@ -144,8 +144,18 @@ vibecoding/
 - Enhanced dark mode implementation with proper Anthropic color inversions
 - Improved card design and button styling to match Anthropic's UI patterns
 - Fixed contrast issues in various UI elements for better accessibility
-- Implemented Google Analytics tracking on all pages
-- Added comprehensive landing page with visual introduction
+- Standardized all SVG diagrams to use CSS variables and consistent styling
+- Improved vertical centering in buttons for consistent aesthetic
+- Fixed mobile rendering of SVG diagrams by adding responsive parameters
+- Unified color usage with Anthropic's color variables 
+- Updated all theme-color meta tags for proper browser theme display
+- Standardized monospace font family to 'SF Mono', 'Roboto Mono', Consolas across all code blocks
+- Replaced all hardcoded colors in terminal examples with CSS variables
+- Fixed border styles to use consistent variable-based colors
+- Standardized border-radius across terminal and code examples
+- Fixed vertical alignment in mobile navigation links and buttons to ensure proper centering
+- Standardized touch targets for better mobile accessibility with consistent flexbox styling
+- Improved line-height consistency across interactive elements
 
 ## Visual Style Audit
 
@@ -177,9 +187,12 @@ All UI components have been audited for consistency across pages:
 
 2. **Buttons** - Properly standardized:
    - 48px height with 24px horizontal padding
-   - 8px border radius
+   - 8px border radius via var(--radius-sm)
    - Proper hover states with subtle animation
    - Contrast ratio of 4.5:1 or better
+   - Vertically centered text using flexbox (display: inline-flex, align-items: center, justify-content: center)
+   - Consistent line-height (1.2) for better text rendering
+   - Standardized touch targets for better mobile accessibility (min-height: 44px)
 
 3. **SVG Diagrams** - Audited and updated:
    - Consistent stroke widths and colors
@@ -216,11 +229,13 @@ After reviewing all pages, we've identified several areas needing consistent Ant
 
 #### 2. Code & Terminal Examples
 - **Syntax Highlighting**: Standardize code coloring across all pages
-- **Terminal Styling**: Create consistent terminal example appearance
-- **Monospace Font**: Ensure consistent font usage (Consolas, Monaco, 'Andale Mono')
-- **Contrast Enhancement**: Improve text/background contrast for all code elements
-- **Terminal Prompts**: Standardize prompt styling to match Anthropic CLI aesthetics
+- **Terminal Styling**: Create consistent terminal example appearance with CSS variables
+- **Monospace Font**: Standardized font stack to 'SF Mono', 'Roboto Mono', Consolas, Monaco, 'Andale Mono', monospace
+- **Contrast Enhancement**: Improved text/background contrast for all code elements using Anthropic color variables
+- **Terminal Prompts**: Standardized prompt styling to match Anthropic CLI aesthetics
+- **Border Radius**: Standardized all terminal and code blocks to use var(--radius-sm)
 - **Pages Affected**: All pages with code examples and terminal demonstrations
+- **Status**: Completed font standardization and color variable usage
 
 #### 3. Card Component System
 - **Card Variants**: Update all specialized cards to use consistent base styling:
@@ -285,12 +300,16 @@ Each page has been reviewed for visual consistency:
 
 ## Technical Notes
 - The site uses a single CSS file (mobile-styles.css) with CSS variables for theming
-- SVG diagrams are inline for better performance and accessibility
+- SVG diagrams are inline for better performance and accessibility with standardized styling
 - No external JavaScript libraries are used (only Google Analytics)
-- Site is optimized for accessibility with proper contrast ratios
+- Site is optimized for accessibility with proper contrast ratios (minimum 4.5:1)
 - Dark mode is implemented through CSS media queries and variable overrides
-- Anthropic styling is implemented using their exact design specifications
-- Transition effects use Anthropic's custom cubic-bezier timing functions
+- Anthropic styling is implemented using their exact design system specifications
+- Transition effects use Anthropic's custom cubic-bezier timing functions (0.165, 0.84, 0.44, 1)
+- All code blocks use a standardized monospace font stack with consistent styling
+- Terminal examples use CSS variables for consistent appearance across all pages
+- All UI components have been audited and standardized for design consistency
+- Font families thoroughly standardized (Inter for UI, SF Mono/Roboto Mono for code)
 
 ## GitHub Pages Configuration
 - Deployment from main branch

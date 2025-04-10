@@ -179,17 +179,18 @@ nav a {
     border-radius: var(--radius-sm);
     transition: all 0.2s ease;
     text-align: center;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     /* Larger touch target for mobile */
     min-height: 44px;
-    line-height: 24px;
+    line-height: 1.2;
 }
 
 @media (min-width: 768px) {
     nav a {
         padding: 8px 16px;
-        min-height: auto;
-        line-height: inherit;
+        min-height: 44px;
     }
 }
 
@@ -317,7 +318,7 @@ code {
     background-color: var(--color-slate-medium);
     padding: 2px 5px;
     border-radius: 3px;
-    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-family: 'SF Mono', 'Roboto Mono', Consolas, Monaco, 'Andale Mono', monospace;
     word-break: break-word;
     white-space: pre-wrap;
     color: var(--color-cloud-light);
@@ -364,7 +365,7 @@ pre {
 
 .introduction h2 {
     margin-top: 30px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 10px;
 }
 
@@ -770,7 +771,7 @@ tr:hover {
 .terminal-demo {
     background-color: var(--color-slate-dark);
     color: var(--color-ivory-light);
-    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-family: 'SF Mono', 'Roboto Mono', Consolas, Monaco, 'Andale Mono', monospace;
     padding: 15px;
     border-radius: var(--radius-sm);
     margin: 20px 0;
@@ -814,7 +815,7 @@ tr:hover {
 .technique-example {
     background-color: var(--color-slate-dark);
     color: var(--color-ivory-light);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'SF Mono', 'Roboto Mono', Consolas, Monaco, 'Andale Mono', monospace;
     padding: 15px;
     border-radius: var(--radius-sm);
     margin: 10px 0;
@@ -934,7 +935,7 @@ tr:hover {
     padding: 15px;
     border-radius: var(--radius-sm);
     margin: 20px 0;
-    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-family: 'SF Mono', 'Roboto Mono', Consolas, Monaco, 'Andale Mono', monospace;
     overflow-x: auto;
     white-space: pre-wrap;
     word-break: break-word;
@@ -1034,7 +1035,7 @@ tr:hover {
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-color);
     margin: 20px 0;
-    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-family: 'SF Mono', 'Roboto Mono', Consolas, Monaco, 'Andale Mono', monospace;
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -1137,11 +1138,11 @@ tr:hover {
 
 /* List formatting examples */
 .terminal-example {
-    background-color: #1e1e1e;
-    color: #f0f0f0;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--color-slate-dark);
+    color: var(--color-ivory-light);
+    font-family: 'SF Mono', 'Roboto Mono', Consolas, Monaco, 'Andale Mono', monospace;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     margin: 20px 0;
     white-space: pre-wrap;
     overflow-x: auto;
@@ -1194,11 +1195,11 @@ tr:hover {
     font-size: 1.1em;
 }
 .technique-example {
-    background-color: #1e1e1e;
-    color: #f0f0f0;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--color-slate-dark);
+    color: var(--color-ivory-light);
+    font-family: 'SF Mono', 'Roboto Mono', Consolas, Monaco, 'Andale Mono', monospace;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     margin: 10px 0;
     white-space: pre-wrap;
     overflow-x: auto;
@@ -1331,6 +1332,8 @@ a, button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    line-height: 1.2;
 }
 
 /* Dark mode support */
