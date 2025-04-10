@@ -333,6 +333,13 @@ Each page has been reviewed for visual consistency:
 - All UI components have been audited and standardized for design consistency
 - Font families thoroughly standardized (Inter for UI, SF Mono/Roboto Mono for code)
 
+## Repository Guidelines
+- Do not include "Generated with Claude Code" in commit messages
+- Keep commit messages clear, concise, and descriptive
+- Focus on the purpose of changes rather than the tools used
+- Use conventional commit message format (e.g., "fix:", "feat:", "docs:")
+- Include scope of changes when appropriate
+
 ## GitHub Pages Configuration
 - Deployment from main branch
 - Custom domain: Not configured (using default jenochs.github.io/vibecoding/)
