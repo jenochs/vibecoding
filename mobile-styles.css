@@ -1362,7 +1362,7 @@ tr:hover {
     }
 }
 
-/* Series navigation styles */
+/* Series navigation styles - used in both card and list layouts */
 .series-navigation {
     background-color: var(--background-off);
     padding: 20px;
@@ -1373,6 +1373,7 @@ tr:hover {
     overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
+/* For pages using h3 heading (like FAQ) */
 .series-navigation h3 {
     margin-top: 0;
     margin-bottom: 15px;
@@ -1382,6 +1383,17 @@ tr:hover {
     padding-bottom: 10px;
 }
 
+/* For pages using h2 heading (like index) */
+.series-navigation h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: var(--color-slate-dark);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+/* Original list-style navigation used in FAQ */
 .series-nav-list {
     list-style-type: none;
     padding: 0;
@@ -1389,6 +1401,130 @@ tr:hover {
     display: flex; /* Flex instead of grid for better control */
     flex-direction: column;
     box-sizing: border-box;
+}
+
+/* Card-style navigation used in index page */
+.series-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .series-cards {
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        gap: 15px;
+    }
+}
+
+.series-card {
+    background-color: var(--background-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 12px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-slate-dark);
+    transition: all 0.2s ease;
+    min-height: 80px;
+}
+
+.series-card:hover, .series-card:active {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px var(--shadow-color);
+    border-color: var(--color-cloud-medium);
+}
+
+.series-card.current {
+    background-color: var(--color-slate-dark);
+    color: var(--color-ivory-light);
+    border-color: var(--color-slate-dark);
+}
+
+.card-number {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.card-title {
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+.series-card.faq {
+    grid-column: span 2;
+}
+
+/* Related topics section */
+.related-topics {
+    background-color: var(--background-off);
+    padding: 20px;
+    border-radius: var(--radius-md);
+    margin: 30px 0;
+    border: 1px solid var(--border-color);
+}
+
+.related-topics h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: var(--color-slate-dark);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.related-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .related-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 15px;
+    }
+}
+
+.related-link {
+    background-color: var(--background-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--color-slate-dark);
+    transition: all 0.2s ease;
+}
+
+.related-link:hover, .related-link:active {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px var(--shadow-color);
+    border-color: var(--color-cloud-medium);
+}
+
+.related-number {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.related-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.related-description {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    line-height: 1.4;
 }
 
 /* Responsive layout for larger screens */
