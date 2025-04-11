@@ -1432,10 +1432,19 @@ tr:hover {
     min-height: 80px;
 }
 
-.series-card:hover, .series-card:active {
+.series-card:hover, 
+.series-card:active,
+.series-card:focus {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px var(--shadow-color);
     border-color: var(--color-cloud-medium);
+    outline: none;
+}
+
+/* Keyboard focus style */
+.series-card:focus-visible {
+    outline: 2px solid var(--color-slate-dark);
+    outline-offset: 2px;
 }
 
 .series-card.current {
@@ -1503,10 +1512,19 @@ tr:hover {
     transition: all 0.2s ease;
 }
 
-.related-link:hover, .related-link:active {
+.related-link:hover, 
+.related-link:active,
+.related-link:focus {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px var(--shadow-color);
     border-color: var(--color-cloud-medium);
+    outline: none;
+}
+
+/* Keyboard focus style */
+.related-link:focus-visible {
+    outline: 2px solid var(--color-slate-dark);
+    outline-offset: 2px;
 }
 
 .related-number {
@@ -1567,11 +1585,18 @@ tr:hover {
     box-sizing: border-box;
 }
 
-.series-nav-list a:hover {
+.series-nav-list a:hover,
+.series-nav-list a:focus {
     background-color: var(--color-ivory-dark);
     border-color: var(--color-slate-medium);
     transform: translateY(-2px);
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    outline: none;
+}
+
+.series-nav-list a:focus-visible {
+    outline: 2px solid var(--color-slate-dark);
+    outline-offset: 2px;
 }
 
 .series-nav-list a.current {
@@ -1633,10 +1658,18 @@ a, button {
     }
     
     /* Navigation component overrides for dark mode */
+    .series-navigation,
+    .related-topics {
+        background-color: var(--color-slate-medium);
+        border-color: var(--color-slate-light);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+    
     .series-navigation h2,
     .series-navigation h3,
     .related-topics h2 {
         color: var(--color-ivory-light);
+        border-color: var(--color-slate-light);
     }
     
     .series-card {
@@ -1646,9 +1679,16 @@ a, button {
     }
     
     .series-card:hover, 
-    .series-card:active {
+    .series-card:active,
+    .series-card:focus {
         background-color: var(--color-slate-medium);
         border-color: var(--color-cloud-medium);
+        outline: none;
+    }
+    
+    .series-card:focus-visible {
+        outline: 2px solid var(--color-ivory-light);
+        outline-offset: 2px;
     }
     
     .series-card.current {
@@ -1664,9 +1704,16 @@ a, button {
     }
     
     .related-link:hover,
-    .related-link:active {
+    .related-link:active,
+    .related-link:focus {
         background-color: var(--color-slate-medium);
         border-color: var(--color-cloud-medium);
+        outline: none;
+    }
+    
+    .related-link:focus-visible {
+        outline: 2px solid var(--color-ivory-light);
+        outline-offset: 2px;
     }
     
     .related-title {
@@ -1690,9 +1737,16 @@ a, button {
         border-color: var(--color-slate-light);
     }
     
-    .series-nav-list a:hover {
+    .series-nav-list a:hover,
+    .series-nav-list a:focus {
         background-color: var(--color-slate-medium);
         border-color: var(--color-cloud-medium);
+        outline: none;
+    }
+    
+    .series-nav-list a:focus-visible {
+        outline: 2px solid var(--color-ivory-light);
+        outline-offset: 2px;
     }
     
     .series-nav-list a.current {
