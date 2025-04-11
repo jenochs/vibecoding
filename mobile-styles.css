@@ -1410,7 +1410,7 @@ tr:hover {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 10px;
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
