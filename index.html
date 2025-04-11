@@ -151,6 +151,88 @@
       ]
     }
     </script>
+    
+    <!-- BreadcrumbList Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "VibeCoding Home",
+          "item": "https://jenochs.github.io/vibecoding/"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is VibeCoding?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VibeCoding is a methodology designed to help developers maximize their productivity and creativity when working with Claude Code and other AI assistants. It focuses on establishing effective communication patterns and workflows between human developers and AI systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get started with Claude Code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To get started with Claude Code, begin by creating a Claude.md file in your project repository to provide essential context about your project. Then set up a documentation folder for your platform's key technologies, learn how to manage the context window, explore Markdown formatting techniques, and consider how to integrate with GitHub Copilot if you're using both tools."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Claude Code with GitHub Copilot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Claude Code and GitHub Copilot can be used together in a complementary workflow. Claude Code excels at understanding broader context and solving complex problems, while GitHub Copilot is excellent for inline code suggestions as you type. Our GitHub Copilot Integration guide provides detailed strategies for combining these tools effectively."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I handle context window limitations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To manage context window limitations effectively, create a centralized documentation repository, use focused prompts rather than general questions, implement information compression techniques, and reference specific documentation files rather than pasting entire contents. Our Managing Context Window guide provides detailed strategies for working within token limits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which web access method should I use: WebFetch or Tavily?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose WebFetch for accessing specific web pages with direct content needs, and Tavily for broader research queries that require synthesis across multiple sources. Our WebFetch vs. Tavily comparison provides detailed scenarios for when to use each approach."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should I format my prompts for Claude Code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For effective prompting, use Markdown formatting to structure your requests, provide clear instructions at the beginning of your prompt, use headings and lists to organize information, include context about your goals and constraints, and reference specific files or documentation when relevant. Our Effective Markdown Usage guide provides detailed examples of well-structured prompts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the purpose of the Claude.md file?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Claude.md file provides essential context about your project to help Claude Code understand your codebase better. It should include a project overview, architecture information, tech stack details, coding conventions, and your current focus. This improves the quality of AI assistance by giving Claude Code a clear understanding of your project's structure and goals."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
