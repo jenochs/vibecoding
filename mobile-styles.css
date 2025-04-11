@@ -1632,6 +1632,79 @@ a, button {
         --shadow-color: rgba(0, 0, 0, 0.3);
     }
     
+    /* Navigation component overrides for dark mode */
+    .series-navigation h2,
+    .series-navigation h3,
+    .related-topics h2 {
+        color: var(--color-ivory-light);
+    }
+    
+    .series-card {
+        background-color: var(--color-slate-dark);
+        color: var(--color-ivory-light);
+        border-color: var(--color-slate-light);
+    }
+    
+    .series-card:hover, 
+    .series-card:active {
+        background-color: var(--color-slate-medium);
+        border-color: var(--color-cloud-medium);
+    }
+    
+    .series-card.current {
+        background-color: var(--color-cloud-dark);
+        color: var(--color-ivory-light);
+        border-color: var(--color-cloud-dark);
+    }
+    
+    .related-link {
+        background-color: var(--color-slate-dark);
+        color: var(--color-ivory-light);
+        border-color: var(--color-slate-light);
+    }
+    
+    .related-link:hover,
+    .related-link:active {
+        background-color: var(--color-slate-medium);
+        border-color: var(--color-cloud-medium);
+    }
+    
+    .related-title {
+        color: var(--color-ivory-light);
+    }
+    
+    .related-description {
+        color: var(--color-cloud-light);
+    }
+    
+    .card-title,
+    .card-number,
+    .related-number {
+        color: var(--color-ivory-light);
+    }
+    
+    /* FAQ page list navigation dark mode overrides */
+    .series-nav-list a {
+        background-color: var(--color-slate-dark);
+        color: var(--color-ivory-light);
+        border-color: var(--color-slate-light);
+    }
+    
+    .series-nav-list a:hover {
+        background-color: var(--color-slate-medium);
+        border-color: var(--color-cloud-medium);
+    }
+    
+    .series-nav-list a.current {
+        background-color: var(--color-cloud-dark);
+        color: var(--color-ivory-light);
+        border-color: var(--color-cloud-dark);
+    }
+    
+    .series-nav-list .nav-number {
+        background-color: var(--color-cloud-dark);
+    }
+    
     /* Workaround boxes in dark mode */
     .workaround-box {
         background-color: rgba(204, 120, 92, 0.15);
