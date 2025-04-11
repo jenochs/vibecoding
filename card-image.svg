@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with rounded corners -->
+  <rect width="1200" height="630" rx="20" fill="#141413"/>
+  
+  <!-- Visual elements inspired by favicon -->
+  <circle cx="420" cy="315" r="140" fill="#cc785c" opacity="0.8"/>
+  <circle cx="780" cy="315" r="140" fill="#87867f" opacity="0.8"/>
+  <circle cx="600" cy="315" r="200" stroke="#f0eee6" stroke-width="6" fill="none"/>
+  
+  <!-- Decorative "V" for VibeCoding -->
+  <path d="M420,200 L600,430 L780,200" stroke="#f0eee6" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+  
+  <!-- Content Container -->
+  <rect x="250" y="100" width="700" height="430" rx="15" fill="#141413" stroke="#3d3d3a" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Title -->
+  <text x="600" y="180" font-family="Inter, sans-serif" font-size="72" font-weight="600" text-anchor="middle" fill="#f0eee6" letter-spacing="-0.03em">
+    VibeCoding
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="240" font-family="Inter, sans-serif" font-size="48" font-weight="500" text-anchor="middle" fill="#d1cfc5" letter-spacing="-0.02em">
+    with Claude Code
+  </text>
+  
+  <!-- Description -->
+  <text x="600" y="470" font-family="Inter, sans-serif" font-size="36" font-weight="500" text-anchor="middle" fill="#b0aea5" letter-spacing="-0.02em">
+    10 Best Practices for AI-Assisted Development
+  </text>
+  
+  <!-- Web URL -->
+  <rect x="400" y="540" width="400" height="50" rx="25" fill="#3d3d3a"/>
+  <text x="600" y="575" font-family="Inter, sans-serif" font-size="28" text-anchor="middle" fill="#f0eee6">
+    jenochs.github.io/vibecoding
+  </text>
+</svg>
