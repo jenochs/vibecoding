@@ -232,15 +232,28 @@
         
         <h2>Monitoring Context Usage</h2>
         
-        <p>Claude Code provides context window information via the <code>/context</code> command, which displays your current token usage:</p>
+        <p>Claude Code can provide context window information when you add specific instructions to your <code>CLAUDE.md</code> file:</p>
+        
+        <div class="code-example">
+            <pre><code># Special Instructions
+- When asked about context window usage, please output: "Context window: [tokens_used]/200,000 tokens ([percentage]% used)"
+- When asked how much context or memory is left, calculate and show remaining tokens and percentage</code></pre>
+        </div>
+        
+        <p>Once these instructions are added, you can simply ask Claude about your context window:</p>
         
         <div class="terminal-demo">
-            <p><span class="terminal-prompt">></span> <span class="terminal-command">/context</span></p>
-            <p><span class="terminal-claude">Claude Code:</span> <span class="terminal-output">Context window: 47,231/200,000 tokens (23.6% used)</span></p>
+            <p><span class="terminal-prompt">></span> <span class="terminal-command">How much context window is left?</span></p>
+            <p><span class="terminal-claude">Claude Code:</span> <span class="terminal-output">Context window: 67,812/200,000 tokens (33.9% used). You have 132,188 tokens remaining (66.1%).</span></p>
+        </div>
+        
+        <div class="tip">
+            <div class="tip-title">Best Practice</div>
+            <p>Regularly check your available context by simply asking Claude. When your context window gets too full, consider starting a new session with just the essential context.</p>
         </div>
         
         <div class="progress-container">
-            <div class="progress-bar" style="width: 30%;">~30% Used</div>
+            <div class="progress-bar" style="width: 34%;">~34% Used</div>
         </div>
         
         <p>When estimating how much content you can include, use these approximations:</p>
