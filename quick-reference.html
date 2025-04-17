@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ44YVGG9G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-KZ44YVGG9G");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Code Quick Reference | VibeCoding Best Practices</title>
+    <meta name="description" content="Comprehensive quick reference guide for Claude Code commands, tools, and best practices. Find all the essential information in one convenient resource.">
+    <meta name="keywords" content="Claude Code, quick reference, cheat sheet, commands, tools, slash commands, CLI flags, best practices, VibeCoding">
+    <meta name="author" content="JEnochs">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="English">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Claude Code Quick Reference | VibeCoding Best Practices">
+    <meta property="og:description" content="Comprehensive quick reference guide for Claude Code commands, tools, and best practices. Find all the essential information in one convenient resource.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jenochs.github.io/vibecoding/quick-reference.html">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Claude Code Quick Reference | VibeCoding Best Practices">
+    <meta name="twitter:description" content="Comprehensive quick reference guide for Claude Code commands, tools, and best practices. Find all the essential information in one convenient resource.">
+    <meta name="twitter:image" content="https://jenochs.github.io/vibecoding/card-image.png">
+    <!-- Canonical URL to prevent duplicate content issues -->
+    <link rel="canonical" href="https://jenochs.github.io/vibecoding/quick-reference.html">
+    <link rel="stylesheet" href="mobile-styles.css">
+    <!-- Preload CSS for performance -->
+    <link rel="preload" href="mobile-styles.css" as="style">
+    <!-- Add theme-color for mobile browsers -->
+    <meta name="theme-color" content="var(--color-slate-dark)">
+    
+    <!-- Structured Data for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Claude Code Quick Reference | VibeCoding Best Practices",
+      "description": "Comprehensive quick reference guide for Claude Code commands, tools, and best practices. Find all the essential information in one convenient resource.",
+      "author": {
+        "@type": "Person",
+        "name": "Joseph Enochs"
+      },
+      "datePublished": "2025-04-17",
+      "dateModified": "2025-04-17",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://jenochs.github.io/vibecoding/quick-reference.html"
+      },
+      "isPartOf": {
+        "@type": "TechArticleSeries",
+        "name": "VibeCoding Best Practices",
+        "url": "https://jenochs.github.io/vibecoding/"
+      }
+    }
+    </script>
+    
+    <!-- BreadcrumbList Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "VibeCoding Home",
+          "item": "https://jenochs.github.io/vibecoding/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Claude Code Quick Reference",
+          "item": "https://jenochs.github.io/vibecoding/quick-reference.html"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>VibeCoding with Claude Code</h1>
+        <div class="subtitle">Best Practices for AI-Assisted Development</div>
+    </header>
+
+    <nav>
+        <a href="index.html" class="home">Home</a>
+        <div>
+            <a href="page11.html">Main Guide</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Claude Code Quick Reference</h1>
+        
+        <div class="diagram">
+            <svg width="600" height="300" viewBox="0 0 600 300" class="fill-secondary stroke-primary">
+                <!-- Main container -->
+                <rect x="50" y="20" width="500" height="260" rx="10" fill="var(--background-off)" stroke="var(--color-slate-dark)" stroke-width="2"/>
+                
+                <!-- Command sections -->
+                <rect x="80" y="50" width="440" height="40" rx="5" fill="var(--color-slate-dark)" opacity="0.8" stroke="var(--color-slate-dark)" stroke-width="1"/>
+                <text x="300" y="75" font-family="Inter" font-size="16" text-anchor="middle" fill="var(--color-ivory-light)">CLI Commands</text>
+                
+                <rect x="80" y="110" width="440" height="40" rx="5" fill="var(--color-slate-dark)" opacity="0.8" stroke="var(--color-slate-dark)" stroke-width="1"/>
+                <text x="300" y="135" font-family="Inter" font-size="16" text-anchor="middle" fill="var(--color-ivory-light)">Slash Commands</text>
+                
+                <rect x="80" y="170" width="440" height="40" rx="5" fill="var(--color-slate-dark)" opacity="0.8" stroke="var(--color-slate-dark)" stroke-width="1"/>
+                <text x="300" y="195" font-family="Inter" font-size="16" text-anchor="middle" fill="var(--color-ivory-light)">Tools Reference</text>
+                
+                <rect x="80" y="230" width="440" height="30" rx="5" fill="var(--color-slate-dark)" opacity="0.8" stroke="var(--color-slate-dark)" stroke-width="1"/>
+                <text x="300" y="250" font-family="Inter" font-size="14" text-anchor="middle" fill="var(--color-ivory-light)">Essential Best Practices</text>
+            </svg>
+        </div>
+        
+        <p>This comprehensive quick reference provides all the essential Claude Code commands, tools, and best practices in one convenient resource. Bookmark this page for easy access during your development sessions.</p>
+        
+        <div class="toc">
+            <div class="toc-title">Quick Navigation</div>
+            <ul class="toc-links">
+                <li><a href="#cli-commands">CLI Commands</a></li>
+                <li><a href="#cli-flags">CLI Flags</a></li>
+                <li><a href="#slash-commands">Slash Commands</a></li>
+                <li><a href="#tools">Tools Reference</a></li>
+                <li><a href="#memory">Memory Management</a></li>
+                <li><a href="#permissions">Permission Management</a></li>
+                <li><a href="#prompts">Effective Prompting</a></li>
+                <li><a href="#best-practices">Essential Best Practices</a></li>
+                <li><a href="#config">Configuration Options</a></li>
+            </ul>
+        </div>
+        
+        <h2 id="cli-commands">CLI Commands</h2>
+        
+        <table class="reference-table">
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td><code>claude</code></td>
+                <td>Start interactive REPL</td>
+                <td><code>claude</code></td>
+            </tr>
+            <tr>
+                <td><code>claude "query"</code></td>
+                <td>Start REPL with initial prompt</td>
+                <td><code>claude "explain this project"</code></td>
+            </tr>
+            <tr>
+                <td><code>claude -p "query"</code></td>
+                <td>Run one-off query, then exit</td>
+                <td><code>claude -p "explain this function"</code></td>
+            </tr>
+            <tr>
+                <td><code>cat file | claude -p "query"</code></td>
+                <td>Process piped content</td>
+                <td><code>cat logs.txt | claude -p "explain"</code></td>
+            </tr>
+            <tr>
+                <td><code>claude config</code></td>
+                <td>Configure settings</td>
+                <td><code>claude config set --global theme dark</code></td>
+            </tr>
+            <tr>
+                <td><code>claude update</code></td>
+                <td>Update to latest version</td>
+                <td><code>claude update</code></td>
+            </tr>
+        </table>
+        
+        <h2 id="cli-flags">CLI Flags</h2>
+        
+        <table class="reference-table">
+            <tr>
+                <th>Flag</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td><code>-p, --prompt</code></td>
+                <td>Run a single query and exit</td>
+                <td><code>claude -p "explain this function"</code></td>
+            </tr>
+            <tr>
+                <td><code>-v, --version</code></td>
+                <td>Show Claude Code version</td>
+                <td><code>claude -v</code></td>
+            </tr>
+            <tr>
+                <td><code>--help</code></td>
+                <td>Show help documentation</td>
+                <td><code>claude --help</code></td>
+            </tr>
+            <tr>
+                <td><code>--config</code></td>
+                <td>Set configuration options</td>
+                <td><code>claude --config theme=dark</code></td>
+            </tr>
+            <tr>
+                <td><code>--disable-tool</code></td>
+                <td>Disable specific tools</td>
+                <td><code>claude --disable-tool Bash,Edit</code></td>
+            </tr>
+            <tr>
+                <td><code>--disable-all-tools</code></td>
+                <td>Disable all tools</td>
+                <td><code>claude --disable-all-tools</code></td>
+            </tr>
+            <tr>
+                <td><code>--thinking</code></td>
+                <td>Toggle model thinking visibility</td>
+                <td><code>claude --thinking</code></td>
+            </tr>
+            <tr>
+                <td><code>--model</code></td>
+                <td>Specify the Claude model to use</td>
+                <td><code>claude --model claude-3-7-sonnet</code></td>
+            </tr>
+            <tr>
+                <td><code>--bedrock</code></td>
+                <td>Run on AWS Bedrock</td>
+                <td><code>claude --bedrock</code></td>
+            </tr>
+            <tr>
+                <td><code>--vertex</code></td>
+                <td>Run on Google Vertex AI</td>
+                <td><code>claude --vertex</code></td>
+            </tr>
+        </table>
+        
+        <h2 id="slash-commands">Slash Commands</h2>
+        
+        <table class="reference-table">
+            <tr>
+                <th>Command</th>
+                <th>Purpose</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td><code>/bug</code></td>
+                <td>Report bugs (sends conversation to Anthropic)</td>
+                <td><code>/bug The search isn't working correctly</code></td>
+            </tr>
+            <tr>
+                <td><code>/clear</code></td>
+                <td>Clear conversation history</td>
+                <td><code>/clear</code></td>
+            </tr>
+            <tr>
+                <td><code>/compact [instructions]</code></td>
+                <td>Compact conversation with optional focus</td>
+                <td><code>/compact Focus on testing issues</code></td>
+            </tr>
+            <tr>
+                <td><code>/config</code></td>
+                <td>View/modify configuration</td>
+                <td><code>/config theme dark</code></td>
+            </tr>
+            <tr>
+                <td><code>/cost</code></td>
+                <td>Show token usage statistics</td>
+                <td><code>/cost</code></td>
+            </tr>
+            <tr>
+                <td><code>/doctor</code></td>
+                <td>Check Claude Code installation health</td>
+                <td><code>/doctor</code></td>
+            </tr>
+            <tr>
+                <td><code>/help</code></td>
+                <td>Get usage help</td>
+                <td><code>/help</code></td>
+            </tr>
+            <tr>
+                <td><code>/init</code></td>
+                <td>Initialize project with CLAUDE.md guide</td>
+                <td><code>/init</code></td>
+            </tr>
+            <tr>
+                <td><code>/login</code></td>
+                <td>Switch Anthropic accounts</td>
+                <td><code>/login</code></td>
+            </tr>
+            <tr>
+                <td><code>/logout</code></td>
+                <td>Sign out from your Anthropic account</td>
+                <td><code>/logout</code></td>
+            </tr>
+            <tr>
+                <td><code>/memory</code></td>
+                <td>Edit CLAUDE.md memory files</td>
+                <td><code>/memory</code></td>
+            </tr>
+        </table>
+        
+        <h2 id="tools">Tools Reference</h2>
+        
+        <table class="reference-table">
+            <tr>
+                <th>Tool</th>
+                <th>Description</th>
+                <th>Permissions</th>
+            </tr>
+            <tr>
+                <td><code>dispatch_agent</code></td>
+                <td>Launches a new agent with access to a subset of tools for specialized tasks</td>
+                <td>No permission required</td>
+            </tr>
+            <tr>
+                <td><code>Bash</code></td>
+                <td>Executes bash commands in your terminal environment</td>
+                <td>Permission required</td>
+            </tr>
+            <tr>
+                <td><code>GlobTool</code></td>
+                <td>Finds files matching specified patterns</td>
+                <td>No permission required</td>
+            </tr>
+            <tr>
+                <td><code>GrepTool</code></td>
+                <td>Searches file contents for specific patterns</td>
+                <td>No permission required</td>
+            </tr>
+            <tr>
+                <td><code>LS</code></td>
+                <td>Lists files and directories</td>
+                <td>No permission required</td>
+            </tr>
+            <tr>
+                <td><code>View</code></td>
+                <td>Reads and displays file contents</td>
+                <td>No permission required</td>
+            </tr>
+            <tr>
+                <td><code>Edit</code></td>
+                <td>Makes targeted changes to specific sections of files</td>
+                <td>Permission required</td>
+            </tr>
+            <tr>
+                <td><code>Replace</code></td>
+                <td>Creates new files or completely replaces existing ones</td>
+                <td>Permission required</td>
+            </tr>
+            <tr>
+                <td><code>ReadNotebook</code></td>
+                <td>Reads and displays Jupyter notebooks with their outputs</td>
+                <td>No permission required</td>
+            </tr>
+            <tr>
+                <td><code>NotebookEditCell</code></td>
+                <td>Edits specific cells in Jupyter notebooks</td>
+                <td>Permission required</td>
+            </tr>
+            <tr>
+                <td><code>BatchTool</code></td>
+                <td>Runs multiple tool operations in parallel for efficiency</td>
+                <td>Depends on tools used</td>
+            </tr>
+            <tr>
+                <td><code>WebFetchTool</code></td>
+                <td>Retrieves and processes content from web URLs</td>
+                <td>No permission required</td>
+            </tr>
+        </table>
+        
+        <div class="tip">
+            <div class="tip-title">Pro Tip</div>
+            <p>Always use BatchTool when making multiple tool calls of the same type (e.g., viewing multiple files, making several edits to the same file). This significantly improves performance and reduces context usage.</p>
+        </div>
+        
+        <h2 id="memory">Memory Management</h2>
+        
+        <h3>Memory Types</h3>
+        
+        <div class="comparison-container">
+            <div class="comparison-column">
+                <div class="comparison-header">Project Memory (CLAUDE.md)</div>
+                <ul>
+                    <li>Shared with team members</li>
+                    <li>Stored at project root</li>
+                    <li>Version controlled</li>
+                    <li>Focused on project state</li>
+                </ul>
+            </div>
+            
+            <div class="comparison-column">
+                <div class="comparison-header">Local Memory</div>
+                <ul>
+                    <li>Personal preferences</li>
+                    <li>Project-specific notes</li>
+                    <li>Not shared</li>
+                    <li>Not version controlled</li>
+                </ul>
+            </div>
+            
+            <div class="comparison-column">
+                <div class="comparison-header">User Memory</div>
+                <ul>
+                    <li>Global preferences</li>
+                    <li>Cross-project settings</li>
+                    <li>Stored centrally</li>
+                    <li>Persistent in all sessions</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3>Memory Management Commands</h3>
+        
+        <div class="code-example">
+            <pre><code># Initialize memory
+/init
+
+# View and edit memory
+/memory
+
+# Compact context to optimize memory
+/compact [focus instructions]
+
+# Check memory usage
+/cost</code></pre>
+        </div>
+        
+        <h2 id="permissions">Permission Management</h2>
+        
+        <h3>Permission Levels</h3>
+        
+        <table class="reference-table">
+            <tr>
+                <th>Level</th>
+                <th>Description</th>
+                <th>Configuration</th>
+            </tr>
+            <tr>
+                <td>allow</td>
+                <td>Always allow tool use without prompting</td>
+                <td><code>claude config set toolPermissions.Bash allow</code></td>
+            </tr>
+            <tr>
+                <td>prompt</td>
+                <td>Ask for permission each time (default)</td>
+                <td><code>claude config set toolPermissions.Bash prompt</code></td>
+            </tr>
+            <tr>
+                <td>deny</td>
+                <td>Never allow tool use</td>
+                <td><code>claude config set toolPermissions.Bash deny</code></td>
+            </tr>
+        </table>
+        
+        <h3>Tool Restriction Options</h3>
+        
+        <div class="code-example">
+            <pre><code># Disable specific tools for a session
+claude --disable-tool Bash,Edit
+
+# Disable all tools for a session
+claude --disable-all-tools
+
+# Set global permission settings
+claude config set toolPermissions.Edit prompt</code></pre>
+        </div>
+        
+        <h2 id="prompts">Effective Prompting</h2>
+        
+        <h3>Trigger Phrases for Enhanced Thinking</h3>
+        
+        <div class="comparison-container">
+            <div class="comparison-column">
+                <div class="comparison-header">Basic Prompts</div>
+                <ul>
+                    <li>"Add a function to..."</li>
+                    <li>"Find bugs in this code"</li>
+                    <li>"Create tests for..."</li>
+                    <li>"Improve performance"</li>
+                </ul>
+            </div>
+            
+            <div class="comparison-column">
+                <div class="comparison-header">Enhanced Prompts</div>
+                <ul>
+                    <li>"<strong>Think carefully</strong> about how to add a function..."</li>
+                    <li>"<strong>Analyze deeply</strong> to find bugs..."</li>
+                    <li>"<strong>Think step by step</strong> to create tests..."</li>
+                    <li>"<strong>Consider all aspects</strong> to improve performance..."</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3>Template Structures</h3>
+        
+        <div class="code-example">
+            <pre><code># Code Review Template
+Please review this code with the following focus:
+1. Security vulnerabilities (high priority)
+2. Performance optimizations
+3. Adherence to coding standards
+4. Test coverage
+5. Documentation completeness
+
+# Implementation Template
+Help me implement [feature] with these requirements:
+1. Core functionality: [describe]
+2. API constraints: [list any API requirements]
+3. Performance expectations: [describe]
+4. Security considerations: [describe]</code></pre>
+        </div>
+        
+        <h2 id="best-practices">Essential Best Practices</h2>
+        
+        <ol class="best-practices-list">
+            <li><strong>Use Specific Instructions:</strong> Give clear, specific directions rather than general requests</li>
+            <li><strong>Leverage BatchTool:</strong> Bundle multiple related operations for efficiency</li>
+            <li><strong>Keep CLAUDE.md Updated:</strong> Regularly refresh your project context file</li>
+            <li><strong>Specify Context in Prompts:</strong> Include relevant information about your project or preferences</li>
+            <li><strong>Use Proper Tool Selection:</strong> Choose the right tool for each task (e.g., GrepTool for searching, not Bash with grep)</li>
+            <li><strong>Implement Security Boundaries:</strong> Limit tool permissions appropriately for sensitive projects</li>
+            <li><strong>Monitor Context Usage:</strong> Regularly check token usage with <code>/cost</code></li>
+            <li><strong>Start Broad, Then Narrow:</strong> Begin with open exploration, then focus on specific details</li>
+            <li><strong>Create Reproducible Workflows:</strong> Document your Claude Code processes for future reference</li>
+            <li><strong>Verify Before Modifying:</strong> Always check file contents before editing</li>
+        </ol>
+        
+        <h2 id="config">Configuration Options</h2>
+        
+        <table class="reference-table">
+            <tr>
+                <th>Option</th>
+                <th>Description</th>
+                <th>Values</th>
+            </tr>
+            <tr>
+                <td><code>theme</code></td>
+                <td>UI theme for terminal</td>
+                <td><code>light</code>, <code>dark</code>, <code>auto</code></td>
+            </tr>
+            <tr>
+                <td><code>model</code></td>
+                <td>Claude model to use</td>
+                <td><code>claude-3-7-sonnet-20250219</code>, <code>claude-3-5-sonnet</code></td>
+            </tr>
+            <tr>
+                <td><code>thinking</code></td>
+                <td>Show model thinking</td>
+                <td><code>true</code>, <code>false</code></td>
+            </tr>
+            <tr>
+                <td><code>maxHistorySize</code></td>
+                <td>Max conversation history</td>
+                <td>Number (in entries)</td>
+            </tr>
+            <tr>
+                <td><code>maxTokens</code></td>
+                <td>Max tokens per completion</td>
+                <td>Number</td>
+            </tr>
+            <tr>
+                <td><code>temperature</code></td>
+                <td>Generation temperature</td>
+                <td>0-1 (lower = more deterministic)</td>
+            </tr>
+            <tr>
+                <td><code>toolPermissions</code></td>
+                <td>Default permission settings</td>
+                <td><code>allow</code>, <code>prompt</code>, <code>deny</code></td>
+            </tr>
+        </table>
+        
+        <div class="config-examples">
+            <div class="code-example">
+                <pre><code># Set global configuration
+claude config set --global model claude-3-7-sonnet-20250219
+claude config set --global theme dark
+claude config set --global thinking true
+
+# Set project-specific configuration
+claude config set model claude-3-5-sonnet
+claude config set toolPermissions.Bash prompt
+claude config set toolPermissions.Edit prompt</code></pre>
+            </div>
+        </div>
+        
+        <h2>Additional Resources</h2>
+        
+        <div class="resource-links">
+            <div class="resource-category">
+                <div class="resource-title">Official Documentation</div>
+                <ul>
+                    <li><a href="https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview" target="_blank">Claude Code Overview</a></li>
+                    <li><a href="https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tutorials" target="_blank">Claude Code Tutorials</a></li>
+                    <li><a href="https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/tools" target="_blank">Claude Code Tools</a></li>
+                    <li><a href="https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/command-line" target="_blank">Command Line Reference</a></li>
+                </ul>
+            </div>
+            
+            <div class="resource-category">
+                <div class="resource-title">VibeCoding Guides</div>
+                <ul>
+                    <li><a href="page1.html">In-file Documentation with Claude.md</a></li>
+                    <li><a href="page3.html">Managing Context Window</a></li>
+                    <li><a href="page11.html">Advanced Claude Code Techniques</a></li>
+                    <li><a href="faq.html">Frequently Asked Questions</a></li>
+                </ul>
+            </div>
+            
+            <div class="resource-category">
+                <div class="resource-title">Community Resources</div>
+                <ul>
+                    <li><a href="https://github.com/anthropics/claude-code" target="_blank">Claude Code GitHub Repository</a></li>
+                    <li><a href="https://discord.gg/anthropic" target="_blank">Anthropic Discord Community</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation-buttons">
+        <a href="index.html" class="nav-button">Back to Home</a>
+        <a href="page11.html" class="nav-button">Advanced Claude Code Techniques</a>
+    </div>
+
+    <!-- Series Navigation -->
+    <div class="series-navigation">
+        <h2>Explore the VibeCoding Series</h2>
+        <div class="series-cards">
+            <a href="index.html" class="series-card">
+                <span class="card-number">Home</span>
+                <span class="card-title">Series Overview</span>
+            </a>
+            <a href="page1.html" class="series-card">
+                <span class="card-number">1</span>
+                <span class="card-title">In-file Documentation</span>
+            </a>
+            <a href="page2.html" class="series-card">
+                <span class="card-number">2</span>
+                <span class="card-title">Platform Documentation</span>
+            </a>
+            <a href="page3.html" class="series-card">
+                <span class="card-number">3</span>
+                <span class="card-title">Managing Context Window</span>
+            </a>
+            <a href="page4.html" class="series-card">
+                <span class="card-number">4</span>
+                <span class="card-title">Web Fetch vs. Tavily</span>
+            </a>
+            <a href="page5.html" class="series-card">
+                <span class="card-number">5</span>
+                <span class="card-title">Effective Markdown Usage</span>
+            </a>
+            <a href="page6.html" class="series-card">
+                <span class="card-number">6</span>
+                <span class="card-title">Terminal Limitations</span>
+            </a>
+            <a href="page7.html" class="series-card">
+                <span class="card-number">7</span>
+                <span class="card-title">GitHub Copilot Integration</span>
+            </a>
+            <a href="page8.html" class="series-card">
+                <span class="card-number">8</span>
+                <span class="card-title">Central Documentation Repository</span>
+            </a>
+            <a href="page9.html" class="series-card">
+                <span class="card-number">9</span>
+                <span class="card-title">List Formatting Techniques</span>
+            </a>
+            <a href="page10.html" class="series-card">
+                <span class="card-number">10</span>
+                <span class="card-title">Portable Development</span>
+            </a>
+            <a href="page11.html" class="series-card">
+                <span class="card-number">11</span>
+                <span class="card-title">Advanced Claude Code Techniques</span>
+            </a>
+            <a href="quick-reference.html" class="series-card current">
+                <span class="card-number">REF</span>
+                <span class="card-title">Quick Reference</span>
+            </a>
+            <a href="faq.html" class="series-card faq">
+                <span class="card-number">FAQ</span>
+                <span class="card-title">Frequently Asked Questions</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Joseph Enochs @ EVT. All rights reserved.</p>
+    </footer>
+</body>
+</html>
