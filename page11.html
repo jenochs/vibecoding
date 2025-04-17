@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ44YVGG9G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-KZ44YVGG9G");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Claude Code Techniques | VibeCoding Best Practices</title>
+    <meta name="description" content="Master advanced Claude Code techniques with specialized commands, memory management, and parallel tools. Learn power-user strategies for AI-assisted development.">
+    <meta name="keywords" content="Claude Code, advanced techniques, AI development, slash commands, batch tool, power user, VibeCoding">
+    <meta name="author" content="JEnochs">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="English">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Advanced Claude Code Techniques | VibeCoding Best Practices">
+    <meta property="og:description" content="Master advanced Claude Code techniques with specialized commands, memory management, and parallel tools. Learn power-user strategies for AI-assisted development.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jenochs.github.io/vibecoding/page11.html">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Advanced Claude Code Techniques | VibeCoding Best Practices">
+    <meta name="twitter:description" content="Master advanced Claude Code techniques with specialized commands, memory management, and parallel tools. Learn power-user strategies for AI-assisted development.">
+    <meta name="twitter:image" content="https://jenochs.github.io/vibecoding/card-image.png">
+    <!-- Canonical URL to prevent duplicate content issues -->
+    <link rel="canonical" href="https://jenochs.github.io/vibecoding/page11.html">
+    <link rel="stylesheet" href="mobile-styles.css">
+    <!-- Preload CSS for performance -->
+    <link rel="preload" href="mobile-styles.css" as="style">
+    <!-- Add theme-color for mobile browsers -->
+    <meta name="theme-color" content="var(--color-slate-dark)">
+    
+    <!-- Structured Data for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Advanced Claude Code Techniques | VibeCoding Best Practices",
+      "description": "Master advanced Claude Code techniques with specialized commands, memory management, and parallel tools. Learn power-user strategies for AI-assisted development.",
+      "author": {
+        "@type": "Person",
+        "name": "Joseph Enochs"
+      },
+      "datePublished": "2025-04-17",
+      "dateModified": "2025-04-17",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://jenochs.github.io/vibecoding/page11.html"
+      },
+      "isPartOf": {
+        "@type": "TechArticleSeries",
+        "name": "VibeCoding Best Practices",
+        "url": "https://jenochs.github.io/vibecoding/"
+      },
+      "position": 11
+    }
+    </script>
+    
+    <!-- BreadcrumbList Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "VibeCoding Home",
+          "item": "https://jenochs.github.io/vibecoding/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Advanced Claude Code Techniques",
+          "item": "https://jenochs.github.io/vibecoding/page11.html"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>VibeCoding with Claude Code</h1>
+        <div class="subtitle">Best Practices for AI-Assisted Development</div>
+    </header>
+
+    <nav>
+        <a href="index.html" class="home">Home</a>
+        <div>
+            <a href="page10.html">Previous</a>
+            <a href="index.html">Index</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>11. Advanced Claude Code Techniques</h1>
+        
+        <div class="diagram">
+            <svg width="600" height="350" viewBox="0 0 600 350" class="fill-secondary stroke-primary">
+                <!-- Main container -->
+                <rect x="50" y="20" width="500" height="310" rx="10" fill="var(--background-off)" stroke="var(--color-slate-dark)" stroke-width="2"/>
+                
+                <!-- Claude circle -->
+                <circle cx="300" cy="100" r="50" fill="var(--color-book-cloth)" opacity="0.9" stroke="var(--color-slate-dark)" stroke-width="2"/>
+                <text x="300" y="105" font-family="Inter" font-size="14" font-weight="bold" text-anchor="middle" fill="var(--color-ivory-light)">Claude Code</text>
+                
+                <!-- Command sections -->
+                <rect x="100" y="180" width="120" height="80" rx="5" fill="var(--color-slate-dark)" opacity="0.8" stroke="var(--color-slate-dark)" stroke-width="1"/>
+                <text x="160" y="220" font-family="Inter" font-size="14" text-anchor="middle" fill="var(--color-ivory-light)">CLI Commands</text>
+                
+                <rect x="240" y="180" width="120" height="80" rx="5" fill="var(--color-slate-dark)" opacity="0.8" stroke="var(--color-slate-dark)" stroke-width="1"/>
+                <text x="300" y="220" font-family="Inter" font-size="14" text-anchor="middle" fill="var(--color-ivory-light)">Slash Commands</text>
+                
+                <rect x="380" y="180" width="120" height="80" rx="5" fill="var(--color-slate-dark)" opacity="0.8" stroke="var(--color-slate-dark)" stroke-width="1"/>
+                <text x="440" y="220" font-family="Inter" font-size="14" text-anchor="middle" fill="var(--color-ivory-light)">Parallel Tools</text>
+                
+                <!-- Connection lines -->
+                <path d="M300,150 L160,180" stroke="var(--color-slate-dark)" stroke-width="2"/>
+                <path d="M300,150 L300,180" stroke="var(--color-slate-dark)" stroke-width="2"/>
+                <path d="M300,150 L440,180" stroke="var(--color-slate-dark)" stroke-width="2"/>
+                
+                <text x="300" y="300" font-family="Inter" font-size="16" font-weight="bold" text-anchor="middle" fill="var(--color-slate-dark)">Mastering Advanced Claude Code Capabilities</text>
+            </svg>
+        </div>
+        
+        <p>While you've been exploring the foundational best practices for VibeCoding with Claude Code, there's a deeper level of techniques that can dramatically enhance your AI-assisted development workflow. This guide reveals advanced Claude Code approaches that will transform you from a casual user to a power user.</p>
+        
+        <div class="tip">
+            <div class="tip-title">Power User Perspective</div>
+            <p>"Once I discovered these advanced Claude Code techniques, my productivity increased significantly. I went from basic interactions to orchestrating complex development tasks across my entire codebase."</p>
+        </div>
+        
+        <h2>Mastering Claude Code's Command System</h2>
+        
+        <h3>Advanced Slash Commands</h3>
+        
+        <p>Claude Code provides powerful slash commands that extend beyond basic interactions. Here are the most valuable for power users:</p>
+        
+        <table class="comparison-table">
+            <tr>
+                <th>Command</th>
+                <th>Purpose</th>
+                <th>When to Use</th>
+            </tr>
+            <tr>
+                <td><code>/compact [instructions]</code></td>
+                <td>Compacts conversation with optional focus</td>
+                <td>When your context window is filling up but you want to preserve specific information</td>
+            </tr>
+            <tr>
+                <td><code>/cost</code></td>
+                <td>Shows token usage statistics</td>
+                <td>To monitor your resource consumption and optimize interactions</td>
+            </tr>
+            <tr>
+                <td><code>/init</code></td>
+                <td>Initializes project with CLAUDE.md guide</td>
+                <td>When starting a new project to establish best practices</td>
+            </tr>
+            <tr>
+                <td><code>/memory</code></td>
+                <td>Edits CLAUDE.md memory files</td>
+                <td>When updating project documentation or instructions</td>
+            </tr>
+            <tr>
+                <td><code>/config</code></td>
+                <td>Views or modifies configuration</td>
+                <td>To customize Claude Code's behavior for specific projects</td>
+            </tr>
+        </table>
+        
+        <div class="terminal-demo">
+            <p><span class="terminal-prompt">></span> <span class="terminal-command">/compact Focus on the authentication implementation and testing strategy</span></p>
+            <p><span class="terminal-claude">Claude Code:</span> <span class="terminal-output">I've compacted our conversation, keeping information related to authentication implementation and testing strategy. The context window has been optimized while preserving essential details about these topics.</span></p>
+        </div>
+        
+        <h3>CLI Flags for Enhanced Control</h3>
+        
+        <p>When launching Claude Code from the command line, these advanced flags provide greater control over your session:</p>
+        
+        <div class="code-example">
+            <pre><code># Launch with extended thinking visible
+claude code --thinking
+
+# Use a specific Claude model
+claude code --model claude-3-7-sonnet-20250219
+
+# Disable specific tools for security
+claude code --disable-tool Bash,Edit
+
+# Run on cloud providers
+claude code --bedrock  # AWS Bedrock
+claude code --vertex   # Google Vertex AI</code></pre>
+        </div>
+        
+        <div class="tip">
+            <div class="tip-title">Pro Tip</div>
+            <p>Create aliases for your most commonly used Claude Code configurations to quickly launch with your preferred settings:</p>
+            <pre><code>alias claude-secure="claude code --disable-tool Bash,Edit,Replace"
+alias claude-thinking="claude code --thinking"</code></pre>
+        </div>
+        
+        <h2>Multi-Level Memory Management</h2>
+        
+        <p>Claude Code offers a sophisticated memory system with three distinct levels, each serving different purposes:</p>
+        
+        <div class="memory-grid">
+            <div class="memory-item">
+                <div class="memory-title">Project Memory</div>
+                <p>Stored in CLAUDE.md at the project root, this memory is accessible to all team members and persists across sessions.</p>
+                <ul>
+                    <li>Best for: Project conventions, architectural decisions, team standards</li>
+                    <li>Shared across all developers</li>
+                    <li>Version controlled with your codebase</li>
+                </ul>
+            </div>
+            
+            <div class="memory-item">
+                <div class="memory-title">Local Project Memory</div>
+                <p>Personal preferences and notes specific to a project, stored in a local memory file not shared with the team.</p>
+                <ul>
+                    <li>Best for: Your personal workflows, preferences, notes</li>
+                    <li>Private to your machine</li>
+                    <li>Not in version control (typically .gitignore'd)</li>
+                </ul>
+            </div>
+            
+            <div class="memory-item">
+                <div class="memory-title">User Memory</div>
+                <p>Global preferences that apply across all projects, stored in a central location on your machine.</p>
+                <ul>
+                    <li>Best for: Code style preferences, general reminders</li>
+                    <li>Applied to all projects you work on</li>
+                    <li>Persists across different codebases</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3>Structuring CLAUDE.md for Maximum Effectiveness</h3>
+        
+        <p>An advanced CLAUDE.md structure that leverages all of Claude Code's capabilities:</p>
+        
+        <div class="code-example">
+            <pre><code># Project: Quantum Finance Platform
+
+## Special Instructions
+- When asked about context window usage, output: "Context window: [tokens_used]/200,000 tokens ([percentage]% used)"
+- Prioritize security considerations in all code reviews
+- Follow the project's formatting rules: 2-space indentation, semicolons required
+
+## Current Status
+- Implementing OAuth2 authentication flow
+- Building responsive dashboard components
+- Optimizing real-time data processing pipeline
+
+## Architecture
+- Frontend: React with TypeScript
+- Backend: Node.js microservices
+- Database: PostgreSQL with TimescaleDB extension
+- Deployment: Kubernetes on AWS
+
+## Critical Files
+- src/auth/oauth.ts - OAuth2 implementation
+- src/components/Dashboard.tsx - Main dashboard view
+- src/services/realtime.ts - WebSocket data processing
+
+## Coding Standards
+- All new code must have unit tests
+- Authentication functions require security review
+- Financial calculations need documentation of formulas
+
+## Known Issues
+- Dashboard performance degrades with >1000 data points
+- OAuth token refresh occasionally fails
+- Mobile layout breaks on iPhone SE screens
+
+## Next Tasks
+- [ ] Implement MFA support
+- [ ] Optimize chart rendering
+- [ ] Add end-to-end testing for critical flows</code></pre>
+        </div>
+        
+        <h2>Parallel Processing with BatchTool</h2>
+        
+        <p>One of Claude Code's most powerful yet underutilized features is BatchTool, which allows parallel execution of multiple operations:</p>
+        
+        <div class="strategy-card">
+            <div class="strategy-icon">1</div>
+            <div class="strategy-content">
+                <div class="strategy-title">Parallel File Searches</div>
+                <p>Search multiple patterns or locations simultaneously to quickly map large codebases:</p>
+                <pre><code>Use BatchTool to search for:
+1. All files containing "authentication"
+2. All React components in the src directory
+3. All instances of API endpoint definitions</code></pre>
+            </div>
+        </div>
+        
+        <div class="strategy-card">
+            <div class="strategy-icon">2</div>
+            <div class="strategy-content">
+                <div class="strategy-title">Multi-File Reading</div>
+                <p>Read multiple related files at once to give Claude a comprehensive view:</p>
+                <pre><code>Use BatchTool to read these files in parallel:
+1. src/auth/login.ts
+2. src/auth/oauth.ts
+3. src/components/LoginForm.tsx
+4. src/tests/auth.test.ts</code></pre>
+            </div>
+        </div>
+        
+        <div class="strategy-card">
+            <div class="strategy-icon">3</div>
+            <div class="strategy-content">
+                <div class="strategy-title">Coordinated Multi-File Edits</div>
+                <p>Make consistent changes across multiple files in a single operation:</p>
+                <pre><code>Use BatchTool to perform these edits in parallel:
+1. Update API endpoint in service.ts
+2. Update the TypeScript interface in types.ts
+3. Update test cases in api.test.ts</code></pre>
+            </div>
+        </div>
+        
+        <div class="terminal-demo">
+            <p><span class="terminal-prompt">></span> <span class="terminal-command">Use BatchTool to find all authentication-related code across the codebase</span></p>
+            <p><span class="terminal-claude">Claude Code:</span> <span class="terminal-output">I'll use BatchTool to search for authentication-related code in parallel using GrepTool and GlobTool.</span></p>
+            <!-- Output would show results from multiple tools run in parallel -->
+        </div>
+        
+        <h2>Trigger Words for Enhanced Analysis</h2>
+        
+        <p>Claude Code responds to certain trigger phrases that engage deeper analysis. Using these strategically can produce more thorough and thoughtful responses:</p>
+        
+        <div class="comparison-container">
+            <div class="comparison-column">
+                <div class="comparison-header">Standard Phrases</div>
+                <ul>
+                    <li>"Update this function"</li>
+                    <li>"Find bugs in this code"</li>
+                    <li>"Create a test for this"</li>
+                    <li>"Improve this implementation"</li>
+                </ul>
+            </div>
+            
+            <div class="comparison-column">
+                <div class="comparison-header">Enhanced Trigger Phrases</div>
+                <ul>
+                    <li>"<strong>Think carefully</strong> about how to update this function"</li>
+                    <li>"<strong>Analyze deeply</strong> to find bugs in this code"</li>
+                    <li>"<strong>Think step by step</strong> to create a comprehensive test"</li>
+                    <li>"<strong>Consider all aspects</strong> to improve this implementation"</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="tip">
+            <div class="tip-title">Advanced Technique</div>
+            <p>When facing complex architectural decisions, explicitly ask Claude to consider multiple approaches with trade-offs: "Think through three different approaches to implementing this feature, considering performance, maintainability, and security for each."</p>
+        </div>
+        
+        <h2>Agent Delegation Strategies</h2>
+        
+        <p>Claude Code allows you to delegate complex tasks to specialized agents using the dispatch_agent tool, effectively creating a team of AI assistants:</p>
+        
+        <h3>The Multi-Agent Workflow</h3>
+        
+        <ol class="implementation-steps">
+            <li>
+                <strong>Decompose Complex Tasks:</strong> Break down large tasks into discrete subtasks that can be delegated to individual agents.
+            </li>
+            <li>
+                <strong>Create Specialized Agents:</strong> Launch agents with specific areas of focus (e.g., one for code search, another for test generation).
+            </li>
+            <li>
+                <strong>Run Agents in Parallel:</strong> Use BatchTool to dispatch multiple agents simultaneously, maximizing efficiency.
+            </li>
+            <li>
+                <strong>Integrate Results:</strong> Have the main Claude instance synthesize and integrate the results from all agents.
+            </li>
+        </ol>
+        
+        <div class="code-example">
+            <pre><code>// Example of multi-agent delegation
+1. "Create an agent to find all authentication-related code in the project"
+2. "Create another agent to analyze our current test coverage"
+3. "Create a third agent to research best practices for OAuth2 implementation"
+4. "Based on all these findings, recommend a strategy for improving our auth system"</code></pre>
+        </div>
+        
+        <h2>Template System for Consistent Interactions</h2>
+        
+        <p>Create standardized templates for common development tasks to ensure consistent results:</p>
+        
+        <div class="template-examples">
+            <div class="template-item">
+                <div class="template-title">Code Review Template</div>
+                <pre><code>Please review this code with the following focus:
+1. Security vulnerabilities (high priority)
+2. Performance optimizations
+3. Adherence to our coding standards (see CLAUDE.md)
+4. Test coverage adequacy
+5. Documentation completeness
+
+For each issue found:
+- Indicate the severity (critical/high/medium/low)
+- Explain the problem clearly
+- Suggest a specific improvement with code example
+- Reference any relevant best practices or patterns</code></pre>
+            </div>
+            
+            <div class="template-item">
+                <div class="template-title">Feature Implementation Template</div>
+                <pre><code>Help me implement [feature] with these requirements:
+1. Core functionality: [describe]
+2. API constraints: [list any API requirements]
+3. Performance expectations: [describe]
+4. Security considerations: [describe]
+
+Please approach this implementation as follows:
+1. First, design the interface/API
+2. Then, outline the core algorithm/logic
+3. Next, implement the full solution with proper error handling
+4. Finally, create comprehensive tests
+5. Add JSDoc documentation for all functions</code></pre>
+            </div>
+        </div>
+        
+        <h2>Context Management Strategies for Extended Sessions</h2>
+        
+        <p>Power users know how to maintain productive sessions over extended periods without exhausting the context window:</p>
+        
+        <div class="strategy-card">
+            <div class="strategy-icon">1</div>
+            <div class="strategy-content">
+                <div class="strategy-title">Strategic Context Refreshing</div>
+                <p>Instead of waiting for context to fill completely, proactively refresh it at logical breaking points:</p>
+                <pre><code>Let's summarize our progress on the authentication system before moving to the dashboard component. I'll create a new session to keep our context fresh.</code></pre>
+            </div>
+        </div>
+        
+        <div class="strategy-card">
+            <div class="strategy-icon">2</div>
+            <div class="strategy-content">
+                <div class="strategy-title">Context State Management</div>
+                <p>Explicitly track the state of your development in CLAUDE.md to make session transitions seamless:</p>
+                <pre><code># Current Development State - Updated April 17
+- Completed: Auth API integration, user profile page, test suite
+- In progress: Dashboard data visualization
+- Next up: Notification system
+- Current issue: Chart performance degrades with large datasets</code></pre>
+            </div>
+        </div>
+        
+        <div class="strategy-card">
+            <div class="strategy-icon">3</div>
+            <div class="strategy-content">
+                <div class="strategy-title">Focused Working Sets</div>
+                <p>Maintain a narrowly defined set of files relevant to your current task:</p>
+                <pre><code>For our current task of optimizing the authentication flow, we'll focus on these files:
+
+1. src/auth/AuthProvider.tsx
+2. src/auth/useAuth.tsx
+3. src/api/authApi.ts
+4. src/pages/Login.tsx</code></pre>
+            </div>
+        </div>
+        
+        <h2>Custom CLAUDE.md Instructions for Specialized Tasks</h2>
+        
+        <p>Beyond basic instructions, you can add specialized directives to your CLAUDE.md file for specific development scenarios:</p>
+        
+        <div class="code-example">
+            <pre><code># Special Task Instructions
+
+## For Code Reviews
+- First check for security issues, then performance, then style
+- Always suggest tests for modified functions
+- When reviewing auth code, apply OWASP top 10 checks
+
+## For DB Queries
+- Always validate input to prevent injection
+- Consider adding index recommendations
+- Check transaction boundaries
+- Evaluate read vs. write performance
+
+## For Frontend Components
+- Verify accessibility (WCAG AA compliance)
+- Check for responsive design issues
+- Ensure proper error state handling
+- Validate form inputs on client side</code></pre>
+        </div>
+        
+        <h2>Advanced Tool Permission Management</h2>
+        
+        <p>Claude Code's tool permission system can be fine-tuned for security and efficiency:</p>
+        
+        <div class="comparison-table">
+            <tr>
+                <th>Permission Strategy</th>
+                <th>Configuration</th>
+                <th>Use Case</th>
+            </tr>
+            <tr>
+                <td>Sandbox Mode</td>
+                <td><code>claude code --disable-tool Bash,Edit,Replace</code></td>
+                <td>Exploratory learning, documentation creation</td>
+            </tr>
+            <tr>
+                <td>Read-Only Mode</td>
+                <td><code>claude code --disable-tool Bash,Edit,Replace,NotebookEditCell</code></td>
+                <td>Codebase analysis, planning phases</td>
+            </tr>
+            <tr>
+                <td>Guided Editing</td>
+                <td><code>claude config set toolPermissions.Edit prompt</code></td>
+                <td>Normal development with verification</td>
+            </tr>
+            <tr>
+                <td>Power User Mode</td>
+                <td><code>claude config set toolPermissions.Bash allow</code></td>
+                <td>Trusted environments, rapid development</td>
+            </tr>
+        </div>
+        
+        <div class="tip">
+            <div class="tip-title">Security Best Practice</div>
+            <p>Create project-specific permission profiles with different security levels. For open-source contributions or unfamiliar codebases, use restrictive permissions. For personal projects, enable more tools for efficiency.</p>
+        </div>
+        
+        <h2>Context Window Optimization Techniques</h2>
+        
+        <p>Advanced users have developed specialized techniques for maximizing context window efficiency:</p>
+        
+        <div class="strategy-card">
+            <div class="strategy-icon">1</div>
+            <div class="strategy-content">
+                <div class="strategy-title">Project Maps Instead of Full Codebase</div>
+                <p>Create condensed representations of your project structure:</p>
+                <pre><code># Project Map (saves ~80% context compared to full files)
+/src
+  /components
+    - Button.tsx     # Reusable UI components with theme support
+    - Card.tsx       # Configurable card with header/body/footer
+    - Navigation.tsx # Main app navigation with auth awareness
+  /hooks
+    - useAuth.ts     # Authentication hooks with JWT handling
+    - useForm.ts     # Form state management with validation
+  /pages
+    - Dashboard.tsx  # Main user dashboard with data visualization
+    - Profile.tsx    # User settings and profile management</code></pre>
+            </div>
+        </div>
+        
+        <div class="strategy-card">
+            <div class="strategy-icon">2</div>
+            <div class="strategy-content">
+                <div class="strategy-title">API Summaries</div>
+                <p>Create concise API documentation instead of full specifications:</p>
+                <pre><code># Authentication API Summary
+- POST /api/auth/login: Email/password login -> Returns JWT
+- POST /api/auth/refresh: Refresh token -> New JWT
+- GET /api/auth/me: Get current user profile
+- POST /api/auth/logout: Invalidate current token</code></pre>
+            </div>
+        </div>
+        
+        <div class="strategy-card">
+            <div class="strategy-icon">3</div>
+            <div class="strategy-content">
+                <div class="strategy-title">Incremental File Loading</div>
+                <p>Load only the parts of files you need as you need them:</p>
+                <pre><code>Let's approach this task incrementally:
+1. First, let's look at the interface definitions
+2. Now, let's examine just the authentication handler
+3. Finally, let's look at the error handling section</code></pre>
+            </div>
+        </div>
+        
+        <h2>Integration with Development Workflows</h2>
+        
+        <h3>Git-Centric Development Flow</h3>
+        
+        <p>Integrate Claude Code seamlessly with Git-based workflows:</p>
+        
+        <div class="terminal-demo">
+            <p><span class="terminal-prompt">$</span> <span class="terminal-command">git checkout -b feature/auth-improvements</span></p>
+            <p><span class="terminal-prompt">$</span> <span class="terminal-command">claude code</span></p>
+            <p><span class="terminal-prompt">></span> <span class="terminal-command">Let's improve our authentication system with these requirements...</span></p>
+            <!-- Claude helps implement the changes -->
+            <p><span class="terminal-prompt">$</span> <span class="terminal-command">git add .</span></p>
+            <p><span class="terminal-prompt">$</span> <span class="terminal-command">git commit -m "Improve auth system with MFA support"</span></p>
+            <p><span class="terminal-prompt">$</span> <span class="terminal-command">gh pr create --title "Authentication Improvements"</span></p>
+        </div>
+        
+        <h3>Test-Driven Development</h3>
+        
+        <p>Implement TDD with Claude Code's assistance:</p>
+        
+        <ol class="implementation-steps">
+            <li><strong>Write Test First:</strong> Have Claude help draft comprehensive tests based on requirements</li>
+            <li><strong>Verify Test Coverage:</strong> Ensure all edge cases and requirements are covered</li>
+            <li><strong>Implement Solution:</strong> Guide Claude to implement code that passes the tests</li>
+            <li><strong>Refactor:</strong> Improve the implementation while maintaining test coverage</li>
+        </ol>
+        
+        <h2>Model-Specific Optimization</h2>
+        
+        <p>Different Claude models have different strengths. Power users select the appropriate model for specific tasks:</p>
+        
+        <div class="comparison-table">
+            <tr>
+                <th>Model</th>
+                <th>Best For</th>
+                <th>Launch Command</th>
+            </tr>
+            <tr>
+                <td>Claude-3-7-Sonnet</td>
+                <td>Complex architectural decisions, security analysis</td>
+                <td><code>claude code --model claude-3-7-sonnet-20250219</code></td>
+            </tr>
+            <tr>
+                <td>Claude-3-5-Sonnet</td>
+                <td>Daily development tasks, code generation</td>
+                <td><code>claude code --model claude-3-5-sonnet</code></td>
+            </tr>
+        </div>
+        
+        <h2>Creating Custom Agents with Thinking Style Directives</h2>
+        
+        <p>Shape how Claude Code approaches problems by specifying a thinking style:</p>
+        
+        <div class="template-examples">
+            <div class="template-item">
+                <div class="template-title">Security-Focused Agent</div>
+                <pre><code>When reviewing or writing code:
+1. First analyze all potential security vulnerabilities
+2. Apply OWASP Top 10 checklist to each function
+3. Consider input validation, authentication, authorization
+4. Analyze data exposure risks
+5. Check for proper error handling and logging
+6. Only after security analysis, consider other aspects</code></pre>
+            </div>
+            
+            <div class="template-item">
+                <div class="template-title">Performance-Optimizing Agent</div>
+                <pre><code>When working with my code:
+1. Always consider algorithmic complexity and big O notation
+2. Identify and eliminate redundant computations
+3. Consider memory usage patterns and potential leaks
+4. Look for opportunities to use memoization or caching
+5. Analyze database query performance where applicable
+6. Consider thread/process management in concurrent code</code></pre>
+            </div>
+        </div>
+        
+        <h2>Conclusion: Becoming a Claude Code Power User</h2>
+        
+        <p>Mastering these advanced Claude Code techniques transforms your development workflow. By using parallel processing, specialized commands, multi-level memory management, and context optimization strategies, you'll achieve greater efficiency and tackle more complex development tasks.</p>
+        
+        <div class="tip">
+            <div class="tip-title">Final Thought</div>
+            <p>The true mark of a Claude Code power user isn't just knowing advanced commands, but orchestrating them into a seamless workflow that enhances your natural development process. Experiment with these techniques to find the combination that works best for your specific needs and style.</p>
+        </div>
+    </div>
+
+    <div class="navigation-buttons">
+        <a href="page10.html" class="nav-button">Previous: Portable Development</a>
+        <a href="index.html" class="nav-button">Back to Index</a>
+    </div>
+
+    <!-- Series Navigation -->
+    <div class="series-navigation">
+        <h2>Explore the VibeCoding Series</h2>
+        <div class="series-cards">
+            <a href="index.html" class="series-card">
+                <span class="card-number">Home</span>
+                <span class="card-title">Series Overview</span>
+            </a>
+            <a href="page1.html" class="series-card">
+                <span class="card-number">1</span>
+                <span class="card-title">In-file Documentation</span>
+            </a>
+            <a href="page2.html" class="series-card">
+                <span class="card-number">2</span>
+                <span class="card-title">Platform Documentation</span>
+            </a>
+            <a href="page3.html" class="series-card">
+                <span class="card-number">3</span>
+                <span class="card-title">Managing Context Window</span>
+            </a>
+            <a href="page4.html" class="series-card">
+                <span class="card-number">4</span>
+                <span class="card-title">Web Fetch vs. Tavily</span>
+            </a>
+            <a href="page5.html" class="series-card">
+                <span class="card-number">5</span>
+                <span class="card-title">Effective Markdown Usage</span>
+            </a>
+            <a href="page6.html" class="series-card">
+                <span class="card-number">6</span>
+                <span class="card-title">Terminal Limitations</span>
+            </a>
+            <a href="page7.html" class="series-card">
+                <span class="card-number">7</span>
+                <span class="card-title">GitHub Copilot Integration</span>
+            </a>
+            <a href="page8.html" class="series-card">
+                <span class="card-number">8</span>
+                <span class="card-title">Central Documentation Repository</span>
+            </a>
+            <a href="page9.html" class="series-card">
+                <span class="card-number">9</span>
+                <span class="card-title">List Formatting Techniques</span>
+            </a>
+            <a href="page10.html" class="series-card">
+                <span class="card-number">10</span>
+                <span class="card-title">Portable Development</span>
+            </a>
+            <a href="page11.html" class="series-card current">
+                <span class="card-number">11</span>
+                <span class="card-title">Advanced Claude Code Techniques</span>
+            </a>
+            <a href="faq.html" class="series-card faq">
+                <span class="card-number">FAQ</span>
+                <span class="card-title">Frequently Asked Questions</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Related Topics Section -->
+    <div class="related-topics">
+        <h2>Related Topics</h2>
+        <div class="related-links">
+            <a href="page1.html" class="related-link">
+                <span class="related-number">1</span>
+                <span class="related-title">In-file Documentation</span>
+                <span class="related-description">Enhance CLAUDE.md with advanced instructions</span>
+            </a>
+            <a href="page3.html" class="related-link">
+                <span class="related-number">3</span>
+                <span class="related-title">Managing Context Window</span>
+                <span class="related-description">Advanced techniques for efficient context usage</span>
+            </a>
+            <a href="page6.html" class="related-link">
+                <span class="related-number">6</span>
+                <span class="related-title">Terminal Limitations</span>
+                <span class="related-description">Overcome limitations with advanced command techniques</span>
+            </a>
+            <a href="page7.html" class="related-link">
+                <span class="related-number">7</span>
+                <span class="related-title">GitHub Copilot Integration</span>
+                <span class="related-description">Combine multiple AI tools for maximum productivity</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Joseph Enochs @ EVT. All rights reserved.</p>
+    </footer>
+</body>
+</html>
