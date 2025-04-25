@@ -69,6 +69,3 @@ If you have questions or would like to discuss Claude Code best practices, feel 
 
 Content is © 2025 Joseph Enochs @ EVT. All rights reserved.
 
----
-
-*Made with 💜 and Claude Code*
