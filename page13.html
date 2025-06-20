@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ44YVGG9G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-KZ44YVGG9G");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Prompt Engineering for Claude Code | VibeCoding Best Practices</title>
+    <meta name="description" content="Learn the art of prompt engineering for Claude Code. Master effective prompts, templates, and techniques for optimal AI-assisted development.">
+    <meta name="keywords" content="prompt engineering, Claude Code prompts, AI prompting, vibe coding techniques, effective prompts, prompt templates">
+    <meta name="author" content="JEnochs">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="English">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Mastering Prompt Engineering for Claude Code | VibeCoding Best Practices">
+    <meta property="og:description" content="Learn the art of prompt engineering for Claude Code. Master effective prompts, templates, and techniques for optimal AI-assisted development.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jenochs.github.io/vibecoding/page13.html">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mastering Prompt Engineering for Claude Code">
+    <meta name="twitter:description" content="Learn the art of prompt engineering for effective AI-assisted development.">
+    <meta name="twitter:image" content="https://jenochs.github.io/vibecoding/card-image.png">
+    <!-- Canonical URL to prevent duplicate content issues -->
+    <link rel="canonical" href="https://jenochs.github.io/vibecoding/page13.html">
+    <link rel="stylesheet" href="mobile-styles.css">
+    <!-- Preload CSS for performance -->
+    <link rel="preload" href="mobile-styles.css" as="style">
+    <!-- Add theme-color for mobile browsers -->
+    <meta name="theme-color" content="var(--color-slate-dark)">
+    
+    <!-- Structured Data for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Mastering Prompt Engineering for Claude Code",
+      "description": "Learn the art of prompt engineering for Claude Code. Master effective prompts, templates, and techniques for optimal AI-assisted development.",
+      "author": {
+        "@type": "Person",
+        "name": "JEnochs"
+      },
+      "datePublished": "2025-01-20",
+      "dateModified": "2025-01-20",
+      "publisher": {
+        "@type": "Organization",
+        "name": "VibeCoding",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://jenochs.github.io/vibecoding/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://jenochs.github.io/vibecoding/page13.html"
+      },
+      "articleSection": "AI Development",
+      "keywords": "prompt engineering, Claude Code prompts, AI prompting"
+    }
+    </script>
+    
+    <!-- BreadcrumbList for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://jenochs.github.io/vibecoding/"
+        },
+        {
+          "@type": "ListItem", 
+          "position": 2,
+          "name": "Prompt Engineering",
+          "item": "https://jenochs.github.io/vibecoding/page13.html"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="faq.html">FAQ</a>
+        <a href="quick-reference.html">Quick Reference</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Mastering Prompt Engineering for Claude Code</h1>
+            <p class="subtitle">The art and science of effective AI communication</p>
+        </header>
+
+        <div class="series-navigation">
+            <h3>The 15 Essential VibeCoding Best Practices</h3>
+            <ol>
+                <li><a href="page1.html">In-file Documentation with Claude.md</a></li>
+                <li><a href="page2.html">Platform and Task-Specific Documentation</a></li>
+                <li><a href="page3.html">Managing the Context Window</a></li>
+                <li><a href="page4.html">Fetch vs. Tavily: Choosing the Right Tool</a></li>
+                <li><a href="page5.html">Leveraging Markdown for Clear Communication</a></li>
+                <li><a href="page6.html">Overcoming Terminal Limitations</a></li>
+                <li><a href="page7.html">When to Use GitHub Copilot vs Claude Code</a></li>
+                <li><a href="page8.html">Creating a Central Documentation Repository</a></li>
+                <li><a href="page9.html">Mastering List Formatting</a></li>
+                <li><a href="page10.html">Portable Development with Claude Code</a></li>
+                <li><a href="page11.html">Advanced Claude Code Techniques</a></li>
+                <li><a href="page12.html">Security & Cost Management in Vibe Coding</a></li>
+                <li class="current-page">Mastering Prompt Engineering</li>
+                <li><a href="page14.html">Testing & Debugging AI-Generated Code</a></li>
+                <li><a href="page15.html">Real-World Case Studies</a></li>
+            </ol>
+        </div>
+
+        <main>
+            <section>
+                <h2>The Art of Effective Prompts</h2>
+                <p>Prompt engineering is the emerging discipline of crafting instructions that guide AI to produce precisely the code you need. It combines technical knowledge with an intuitive understanding of how AI models interpret instructions.</p>
+                
+                <div class="tip">
+                    <h3>💡 The Prompt Engineering Mindset</h3>
+                    <p>Think of prompts as a conversation with a brilliant but literal colleague. Be specific about what you want, provide context, and anticipate potential misunderstandings.</p>
+                </div>
+
+                <h3>Anatomy of a Great Prompt</h3>
+                <div class="cards">
+                    <div class="card">
+                        <h3>1. Clear Objective</h3>
+                        <p>State exactly what you want to achieve</p>
+                        <pre><code># Bad
+"Fix the bug"
+
+# Good
+"Fix the authentication bug where users can't log in with email addresses containing '+' symbols"</code></pre>
+                    </div>
+
+                    <div class="card">
+                        <h3>2. Context & Constraints</h3>
+                        <p>Provide relevant background and limitations</p>
+                        <pre><code># Include:
+- Technology stack
+- Existing patterns
+- Performance requirements
+- Security considerations</code></pre>
+                    </div>
+
+                    <div class="card">
+                        <h3>3. Expected Outcome</h3>
+                        <p>Describe what success looks like</p>
+                        <pre><code># Specify:
+- Desired behavior
+- Test cases
+- Edge cases
+- Error handling</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Prompt Templates for Common Tasks</h2>
+                <p>Use these battle-tested templates as starting points for your vibe coding sessions.</p>
+
+                <h3>Bug Fix Template</h3>
+                <div class="terminal">
+                    <div class="terminal-header">bug-fix-prompt.txt</div>
+                    <pre><code>Fix the [specific error/bug] in [file/component].
+
+Current behavior: [what happens now]
+Expected behavior: [what should happen]
+Error message: [paste any error messages]
+
+Steps to reproduce:
+1. [First step]
+2. [Second step]
+3. [Error occurs]
+
+Constraints:
+- Maintain backward compatibility
+- Follow existing code patterns
+- Include error handling
+- Add relevant tests</code></pre>
+                </div>
+
+                <h3>Feature Implementation Template</h3>
+                <div class="terminal">
+                    <div class="terminal-header">feature-prompt.txt</div>
+                    <pre><code>Implement [feature name] for [component/system].
+
+Requirements:
+- [Requirement 1]
+- [Requirement 2]
+- [Requirement 3]
+
+Technical specifications:
+- Use [framework/library]
+- Follow patterns in [reference files]
+- Integrate with [existing systems]
+
+Success criteria:
+- [Measurable outcome 1]
+- [Measurable outcome 2]
+- All tests pass
+- Documentation updated</code></pre>
+                </div>
+
+                <h3>Refactoring Template</h3>
+                <div class="terminal">
+                    <div class="terminal-header">refactor-prompt.txt</div>
+                    <pre><code>Refactor [code/component] to improve [performance/readability/maintainability].
+
+Current issues:
+- [Issue 1]
+- [Issue 2]
+
+Goals:
+- [Improvement 1]
+- [Improvement 2]
+
+Constraints:
+- Maintain all existing functionality
+- Keep the same public API
+- Improve test coverage
+- Update documentation
+
+Reference: Follow patterns used in [example file]</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Advanced Prompting Techniques</h2>
+                <p>Level up your prompt engineering with these advanced strategies.</p>
+
+                <div class="cards">
+                    <div class="card">
+                        <h3>Chain-of-Thought Prompting</h3>
+                        <p>Guide Claude through complex reasoning</p>
+                        <pre><code>claude "Let's think through this step-by-step:
+1. First, analyze the current authentication flow
+2. Identify where the token validation occurs
+3. Determine why expired tokens aren't rejected
+4. Propose a fix that maintains security
+5. Implement the solution with tests"</code></pre>
+                    </div>
+
+                    <div class="card">
+                        <h3>Few-Shot Examples</h3>
+                        <p>Provide examples of desired output</p>
+                        <pre><code>claude "Convert these functions to TypeScript.
+Example:
+// JavaScript
+function add(a, b) { return a + b; }
+// TypeScript
+function add(a: number, b: number): number { return a + b; }
+
+Now convert these functions:
+[paste functions]"</code></pre>
+                    </div>
+
+                    <div class="card">
+                        <h3>Negative Prompting</h3>
+                        <p>Specify what NOT to do</p>
+                        <pre><code>claude "Optimize this database query.
+DO NOT:
+- Use raw SQL
+- Remove input validation
+- Change the return format
+- Break existing tests"</code></pre>
+                    </div>
+                </div>
+
+                <h3>Iterative Refinement</h3>
+                <div class="tip">
+                    <h3>🔄 The Refinement Process</h3>
+                    <ol>
+                        <li>Start with a basic prompt</li>
+                        <li>Review the output</li>
+                        <li>Add constraints for issues found</li>
+                        <li>Iterate until satisfied</li>
+                    </ol>
+                </div>
+
+                <div class="terminal">
+                    <div class="terminal-header">iterative-example.sh</div>
+                    <pre><code># Iteration 1: Basic request
+claude "Create a user registration form"
+
+# Iteration 2: Add requirements
+claude "Create a user registration form with email and password validation"
+
+# Iteration 3: Add specifics
+claude "Create a React user registration form with:
+- Email validation (must be valid format)
+- Password requirements (8+ chars, 1 number, 1 special)
+- Real-time validation feedback
+- Accessibility features (ARIA labels)
+- Mobile-responsive design"
+
+# Iteration 4: Perfect the implementation
+claude "Update the form to use our existing FormInput component 
+and validation utilities from utils/validation.js"</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Common Prompt Engineering Pitfalls</h2>
+                <p>Avoid these common mistakes that lead to suboptimal results.</p>
+
+                <div class="limitation">
+                    <h3>❌ Pitfalls to Avoid</h3>
+                    <table>
+                        <tr>
+                            <th>Pitfall</th>
+                            <th>Example</th>
+                            <th>Better Approach</th>
+                        </tr>
+                        <tr>
+                            <td>Too Vague</td>
+                            <td>"Make it better"</td>
+                            <td>"Improve performance by implementing caching"</td>
+                        </tr>
+                        <tr>
+                            <td>Over-Specification</td>
+                            <td>10+ paragraphs of requirements</td>
+                            <td>Focus on key requirements, let Claude handle details</td>
+                        </tr>
+                        <tr>
+                            <td>Missing Context</td>
+                            <td>"Fix the error"</td>
+                            <td>"Fix the TypeScript error in auth.ts line 42"</td>
+                        </tr>
+                        <tr>
+                            <td>Ambiguous Terms</td>
+                            <td>"Make it modern"</td>
+                            <td>"Update to use React hooks instead of classes"</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h2>Prompt Patterns for Specific Scenarios</h2>
+                
+                <h3>Debugging Complex Issues</h3>
+                <div class="terminal">
+                    <div class="terminal-header">debug-prompt.txt</div>
+                    <pre><code>claude "Debug this issue systematically:
+
+Symptom: [Users report app crashes when uploading large files]
+Environment: [Production, Node.js 18, 2GB RAM limit]
+Frequency: [Happens with files > 100MB]
+
+Please:
+1. List potential causes
+2. Suggest diagnostic steps
+3. Provide code to log relevant metrics
+4. Propose solutions ranked by likelihood"</code></pre>
+                </div>
+
+                <h3>Code Review and Improvement</h3>
+                <div class="terminal">
+                    <div class="terminal-header">review-prompt.txt</div>
+                    <pre><code>claude "Review this code for:
+
+1. Security vulnerabilities
+2. Performance bottlenecks
+3. Code style violations
+4. Missing error handling
+5. Test coverage gaps
+
+Provide specific suggestions with code examples.
+Priority: Security > Performance > Style"</code></pre>
+                </div>
+
+                <h3>Architecture Design</h3>
+                <div class="terminal">
+                    <div class="terminal-header">architecture-prompt.txt</div>
+                    <pre><code>claude "Design the architecture for [feature].
+
+Requirements:
+- Support 10K concurrent users
+- Sub-100ms response time
+- Scalable to 1M users
+- Cost-effective
+
+Consider:
+- Database design
+- Caching strategy
+- API structure
+- Error handling
+- Monitoring
+
+Provide diagrams and implementation plan"</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Measuring Prompt Effectiveness</h2>
+                
+                <div class="cards">
+                    <div class="card">
+                        <h3>Quality Metrics</h3>
+                        <ul>
+                            <li>Does output match requirements?</li>
+                            <li>Is code production-ready?</li>
+                            <li>Are edge cases handled?</li>
+                            <li>Is it well-documented?</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Efficiency Metrics</h3>
+                        <ul>
+                            <li>Iterations needed</li>
+                            <li>Token usage</li>
+                            <li>Time to solution</li>
+                            <li>Manual fixes required</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Improvement Process</h3>
+                        <ul>
+                            <li>Track successful prompts</li>
+                            <li>Build template library</li>
+                            <li>Share with team</li>
+                            <li>Iterate and refine</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tip">
+                    <h3>🎯 Pro Tip</h3>
+                    <p>Save successful prompts in your CLAUDE.md file for future reference. Building a library of effective prompts is like building a toolkit for vibe coding success.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>The Future of Prompt Engineering</h2>
+                <p>As AI models evolve, prompt engineering continues to grow in importance. Master these skills now to stay ahead in the AI-assisted development revolution.</p>
+                
+                <blockquote>
+                    "Behind every great Vibe Coding implementation stands a skilled prompt engineer. There's real skill here—telling an AI to 'make me a website' yields vastly different results than a carefully structured prompt that specifies architecture preferences, design patterns, and edge cases to consider."
+                </blockquote>
+            </section>
+        </main>
+
+        <div class="navigation">
+            <a href="page12.html" class="nav-button">← Previous: Security & Cost Management</a>
+            <a href="page14.html" class="nav-button">Next: Testing & Debugging →</a>
+        </div>
+
+        <div class="related-topics">
+            <h3>Related Topics</h3>
+            <ul>
+                <li><a href="page1.html">In-file Documentation</a> - Store prompts in CLAUDE.md</li>
+                <li><a href="page5.html">Leveraging Markdown</a> - Format prompts effectively</li>
+                <li><a href="page11.html">Advanced Claude Code Techniques</a> - Power user features</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ44YVGG9G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+
+      gtag("config", "G-KZ44YVGG9G");
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security & Cost Management in Vibe Coding | VibeCoding Best Practices</title>
+    <meta name="description" content="Essential security practices and cost management strategies for AI-assisted development. Learn to avoid common vulnerabilities and control API costs in vibe coding.">
+    <meta name="keywords" content="Claude Code security, API cost management, vibe coding security, AI code vulnerabilities, token optimization, Claude Code best practices">
+    <meta name="author" content="JEnochs">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="English">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Security & Cost Management in Vibe Coding | VibeCoding Best Practices">
+    <meta property="og:description" content="Essential security practices and cost management strategies for AI-assisted development. Learn to avoid common vulnerabilities and control API costs.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://jenochs.github.io/vibecoding/page12.html">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Security & Cost Management in Vibe Coding">
+    <meta name="twitter:description" content="Essential security practices and cost management strategies for AI-assisted development.">
+    <meta name="twitter:image" content="https://jenochs.github.io/vibecoding/card-image.png">
+    <!-- Canonical URL to prevent duplicate content issues -->
+    <link rel="canonical" href="https://jenochs.github.io/vibecoding/page12.html">
+    <link rel="stylesheet" href="mobile-styles.css">
+    <!-- Preload CSS for performance -->
+    <link rel="preload" href="mobile-styles.css" as="style">
+    <!-- Add theme-color for mobile browsers -->
+    <meta name="theme-color" content="var(--color-slate-dark)">
+    
+    <!-- Structured Data for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Security & Cost Management in Vibe Coding",
+      "description": "Essential security practices and cost management strategies for AI-assisted development. Learn to avoid common vulnerabilities and control API costs in vibe coding.",
+      "author": {
+        "@type": "Person",
+        "name": "JEnochs"
+      },
+      "datePublished": "2025-01-20",
+      "dateModified": "2025-01-20",
+      "publisher": {
+        "@type": "Organization",
+        "name": "VibeCoding",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://jenochs.github.io/vibecoding/favicon.svg"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://jenochs.github.io/vibecoding/page12.html"
+      },
+      "articleSection": "Security",
+      "keywords": "Claude Code security, API cost management, vibe coding security"
+    }
+    </script>
+    
+    <!-- BreadcrumbList for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://jenochs.github.io/vibecoding/"
+        },
+        {
+          "@type": "ListItem", 
+          "position": 2,
+          "name": "Security & Cost Management",
+          "item": "https://jenochs.github.io/vibecoding/page12.html"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="faq.html">FAQ</a>
+        <a href="quick-reference.html">Quick Reference</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Security & Cost Management in Vibe Coding</h1>
+            <p class="subtitle">Essential practices for safe and economical AI-assisted development</p>
+        </header>
+
+        <div class="series-navigation">
+            <h3>The 15 Essential VibeCoding Best Practices</h3>
+            <ol>
+                <li><a href="page1.html">In-file Documentation with Claude.md</a></li>
+                <li><a href="page2.html">Platform and Task-Specific Documentation</a></li>
+                <li><a href="page3.html">Managing the Context Window</a></li>
+                <li><a href="page4.html">Fetch vs. Tavily: Choosing the Right Tool</a></li>
+                <li><a href="page5.html">Leveraging Markdown for Clear Communication</a></li>
+                <li><a href="page6.html">Overcoming Terminal Limitations</a></li>
+                <li><a href="page7.html">When to Use GitHub Copilot vs Claude Code</a></li>
+                <li><a href="page8.html">Creating a Central Documentation Repository</a></li>
+                <li><a href="page9.html">Mastering List Formatting</a></li>
+                <li><a href="page10.html">Portable Development with Claude Code</a></li>
+                <li><a href="page11.html">Advanced Claude Code Techniques</a></li>
+                <li class="current-page">Security & Cost Management in Vibe Coding</li>
+                <li><a href="page13.html">Mastering Prompt Engineering</a></li>
+                <li><a href="page14.html">Testing & Debugging AI-Generated Code</a></li>
+                <li><a href="page15.html">Real-World Case Studies</a></li>
+            </ol>
+        </div>
+
+        <main>
+            <section>
+                <h2>The Hidden Dangers of AI-Generated Code</h2>
+                <p>Recent studies reveal alarming security gaps in AI-generated applications. Understanding these risks is crucial for responsible vibe coding.</p>
+                
+                <div class="limitation">
+                    <h3>⚠️ Critical Statistics</h3>
+                    <ul>
+                        <li>62% of AI-generated SaaS platforms lack rate limiting on authentication endpoints</li>
+                        <li>41% more time spent debugging AI code in systems over 50,000 lines</li>
+                        <li>$5,000+ average cost of API billing mistakes in production</li>
+                    </ul>
+                </div>
+
+                <h3>Common Vulnerabilities</h3>
+                <div class="terminal">
+                    <div class="terminal-header">security-audit.log</div>
+                    <pre><code># Top vulnerabilities found in vibe-coded applications:
+1. Hardcoded API keys and secrets
+2. Missing input validation
+3. No rate limiting on endpoints
+4. Exposed database credentials
+5. Unescaped user input (XSS)
+6. SQL injection vulnerabilities
+7. Missing authentication checks
+8. Insecure file uploads
+9. Exposed error messages
+10. No HTTPS enforcement</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Essential Security Checklist</h2>
+                <p>Follow this comprehensive checklist for every vibe coding project to ensure security best practices.</p>
+
+                <div class="cards">
+                    <div class="card">
+                        <h3>Authentication & Authorization</h3>
+                        <ul>
+                            <li>Implement rate limiting on all auth endpoints</li>
+                            <li>Use secure session management</li>
+                            <li>Enforce strong password policies</li>
+                            <li>Add multi-factor authentication</li>
+                            <li>Validate all user permissions</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>API Security</h3>
+                        <ul>
+                            <li>Never hardcode API keys</li>
+                            <li>Use environment variables</li>
+                            <li>Implement request signing</li>
+                            <li>Add API usage quotas</li>
+                            <li>Monitor for anomalies</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Data Protection</h3>
+                        <ul>
+                            <li>Encrypt sensitive data at rest</li>
+                            <li>Use HTTPS everywhere</li>
+                            <li>Sanitize all user inputs</li>
+                            <li>Implement proper CORS policies</li>
+                            <li>Regular security audits</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Security Testing Workflow</h3>
+                <div class="terminal">
+                    <div class="terminal-header">security-workflow.sh</div>
+                    <pre><code># Step 1: Initial security audit
+claude -p "Audit this code for security vulnerabilities, focusing on:
+- Authentication and authorization
+- Input validation
+- SQL injection risks
+- XSS vulnerabilities
+- API key exposure" < app.js
+
+# Step 2: Fix identified issues
+claude "Fix the security vulnerabilities found in the audit"
+
+# Step 3: Add security tests
+claude -p "Write security tests for authentication endpoints"
+
+# Step 4: Implement rate limiting
+claude "Add rate limiting to all API endpoints using express-rate-limit"</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Cost Management Strategies</h2>
+                <p>Vibe coding can quickly become expensive without proper cost controls. Here's how to manage your API usage effectively.</p>
+
+                <div class="tip">
+                    <h3>💡 Understanding Token Economics</h3>
+                    <p>Every interaction with Claude Code sends the entire context window to the API. A single session can consume thousands of tokens per request as context grows.</p>
+                </div>
+
+                <h3>Cost Optimization Techniques</h3>
+                
+                <div class="cards">
+                    <div class="card">
+                        <h3>Context Window Management</h3>
+                        <pre><code># Monitor context usage
+Context left until /compact: 22%
+
+# Compact frequently to reduce costs
+/compact
+
+# Clear unnecessary context
+/clear</code></pre>
+                    </div>
+
+                    <div class="card">
+                        <h3>Batch Operations</h3>
+                        <pre><code># Bad: Multiple requests
+claude "Fix bug in auth.js"
+claude "Update tests"
+claude "Add documentation"
+
+# Good: Single request
+claude "Fix bug in auth.js, update tests, and add documentation"</code></pre>
+                    </div>
+                </div>
+
+                <h3>API Usage Monitoring</h3>
+                <div class="terminal">
+                    <div class="terminal-header">cost-monitoring.js</div>
+                    <pre><code>// Implement usage tracking
+const usage = {
+  daily_limit: 100000,
+  current: 0,
+  
+  track: function(tokens) {
+    this.current += tokens;
+    if (this.current > this.daily_limit * 0.8) {
+      console.warn('Approaching daily token limit!');
+    }
+    if (this.current > this.daily_limit) {
+      throw new Error('Daily token limit exceeded');
+    }
+  }
+};
+
+// Set up billing alerts
+const setBillingAlert = async (threshold) => {
+  await api.setBillingAlert({
+    amount: threshold,
+    email: process.env.ADMIN_EMAIL
+  });
+};</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Production Safety Guidelines</h2>
+                <p>Before deploying vibe-coded applications, ensure these safety measures are in place.</p>
+
+                <div class="limitation">
+                    <h3>🚨 Never Deploy Without</h3>
+                    <ol>
+                        <li>Professional security audit</li>
+                        <li>Comprehensive test coverage</li>
+                        <li>Rate limiting on all endpoints</li>
+                        <li>Proper error handling</li>
+                        <li>Monitoring and alerting</li>
+                        <li>Backup and recovery plan</li>
+                    </ol>
+                </div>
+
+                <h3>Environment Configuration</h3>
+                <div class="terminal">
+                    <div class="terminal-header">.env.example</div>
+                    <pre><code># API Configuration
+API_KEY=your_api_key_here
+API_RATE_LIMIT=100
+API_TIMEOUT=30000
+
+# Security Settings
+JWT_SECRET=generate_strong_secret_here
+SESSION_SECRET=another_strong_secret
+BCRYPT_ROUNDS=10
+
+# Database
+DB_CONNECTION_STRING=postgresql://user:pass@host:5432/db
+DB_SSL=true
+
+# Monitoring
+SENTRY_DSN=your_sentry_dsn
+LOG_LEVEL=info
+
+# Cost Controls
+DAILY_TOKEN_LIMIT=100000
+COST_ALERT_THRESHOLD=100</code></pre>
+                </div>
+            </section>
+
+            <section>
+                <h2>Best Practices Summary</h2>
+                
+                <div class="cards">
+                    <div class="card">
+                        <h3>Security First</h3>
+                        <ul>
+                            <li>Audit before deployment</li>
+                            <li>Never trust AI-generated security code</li>
+                            <li>Always validate and sanitize inputs</li>
+                            <li>Use established security libraries</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Cost Control</h3>
+                        <ul>
+                            <li>Set daily token limits</li>
+                            <li>Monitor usage in real-time</li>
+                            <li>Compact context frequently</li>
+                            <li>Batch operations when possible</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Professional Standards</h3>
+                        <ul>
+                            <li>Get security reviews from experts</li>
+                            <li>Maintain comprehensive documentation</li>
+                            <li>Follow compliance requirements</li>
+                            <li>Plan for scale and growth</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tip">
+                    <h3>🔐 Remember</h3>
+                    <p>"The AI won't warn you about security holes you don't know to ask about. You can't secure what you don't understand." - Always pair vibe coding with security expertise.</p>
+                </div>
+            </section>
+        </main>
+
+        <div class="navigation">
+            <a href="page11.html" class="nav-button">← Previous: Advanced Techniques</a>
+            <a href="page13.html" class="nav-button">Next: Prompt Engineering →</a>
+        </div>
+
+        <div class="related-topics">
+            <h3>Related Topics</h3>
+            <ul>
+                <li><a href="page3.html">Managing the Context Window</a> - Optimize token usage</li>
+                <li><a href="page11.html">Advanced Claude Code Techniques</a> - Power user features</li>
+                <li><a href="page14.html">Testing & Debugging AI-Generated Code</a> - Quality assurance</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
